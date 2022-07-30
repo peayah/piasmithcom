@@ -2718,6 +2718,27 @@ input, select, textarea {
 		white-space: nowrap;
 	}
 
+	@media screen and (max-width: 1366px) {
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		padding: 0 1.5em;
+}
+}
+@media screen and (max-width: 1025px) {
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		padding: 0 .9em;
+	}
+}
+
+
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
