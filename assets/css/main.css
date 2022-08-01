@@ -2845,7 +2845,7 @@ input, select, textarea {
 		}
 
 		.main.style2 {
-			background-color: midnightblue;
+			background-color: #1caade;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
 			background-image: url("images/overlay1.png");
@@ -2936,10 +2936,10 @@ input, select, textarea {
 
 	#header {
 		padding: 9em 0 9em 0 ;
-		background-color: #4686a0;
+		/*background-color: #4686a0;*/
 		color: rgba(255, 255, 255, 0.75);
-		background-attachment: fixed, fixed,  fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(180deg, midnightblue 5%, slategray 75%, #fff);
+		background-attachment: fixed, fixed, fixed;
+		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(180deg, #1caade 5%, #79bed8 75%, #fff);
 		background-position: top left,	center center,	center center;
 		background-size: auto,	cover,	cover;
 		overflow: hidden;
@@ -3098,7 +3098,7 @@ input, select, textarea {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			background-image: linear-gradient(45deg, slategray, midnightblue);
+			background-image: linear-gradient(45deg, #79bed8, #1caade);
 			content: '';
 			height: 100%;
 			left: 0;
@@ -3134,8 +3134,8 @@ input, select, textarea {
 		padding: 5em 0 3em 0 ;
 		background-color: #4686a0;
 		color: rgba(255, 255, 255, 0.75);
-		background-attachment: fixed, fixed, fixed;
-		background-image: url("images/overlay2.png"), linear-gradient(0deg, midnightblue, slategray 65%, white 95%);
+		/*background-attachment: fixed, fixed, fixed;*/
+		background-image: url("images/overlay2.png"), linear-gradient(0deg, #1caade, #79bed8 65%, white 95%);
 		background-position: top left, center center,					center center;
 		background-size: auto, cover, cover;
 		text-align: center;
