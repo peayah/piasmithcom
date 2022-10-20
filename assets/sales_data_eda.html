@@ -41,11 +41,12 @@
                     </div>
                     <div class="row">
                     <p>The dataset was pretty clean to begin with. Each of the twelve data files, had 
-                        lines with no content as well as duplicate linesl.</p>
-                    <p>The address column contained the full address. Since it might be valuable 
-                        to group by states or cites, I broke that up into address, city, state and zip.</p>
-                    <p>I also added a category column so I could filter on for example phone category as well 
-                        as a column for when the order was placed.</p>
+                        lines with no content as well as duplicate lines.</p>
+                    <p>The address column contained the customer's full address. I would like to be 
+                        able to count number of cites and states in the dataset, so I broke that column 
+                        into four different columns: address, city, state and zip.</p>
+                    <p>I also added a category column, so I can group, for example, all phones in one
+                        group.</p>
                 </div>
             </div>
             <div class="container col-6 offset-3 col-12-medium">
@@ -55,7 +56,7 @@
                     </header>
                 </div>
                 <div class="row">
-                    <p>Looking at division of purchases into the eight states:</p>
+                    <p><b>Looking at the division of purchases into states:</b></p>
                 </div>
                 <div class="row">
                     <pre>
@@ -71,56 +72,67 @@
                     </pre>
                 </div>
                 <div class="row">
-                    <p>We can see that, California, New York, Texas and Massachusetts make up 80% of the total sales.</p>
+                    <p>It is clear that the dataset is probably a sample of a bigger dataset, since 
+                        it is limited to only eight states. However, analyzing the data, we can see 
+                        that, California, New York, Texas and Massachusetts make up 80% of the total 
+                        sales.</p>
+                    <p>The fact that it is half of the states that make up the 80% is a sign of a 
+                        healthy customer distribution. </p>
                 </div>
-<div class="row">
-    <p>Looking at sales divided in to months and states:</p>
-</div>
-<div class="row">
-    <pre>
-Month     California       Georgia   Massachusetts        Maine      New York        Oregon         Texas    Washington
-   01      724151.34     149159.54       201057.75     22708.80     259829.34      92276.76     231537.58     140692.05
-   02      888850.28     176458.31       213612.59     29845.49     305372.26     119594.38     295014.52     171330.25
-   03     1122715.72     231605.38       301023.81     30406.30     367226.31     156541.73     376765.28     218688.82
-   04     1362467.59     284422.01       353392.17     42536.49     449314.88     197441.63     423919.13     275724.08
-   05     1274553.77     238842.00       328791.70     57978.76     436120.42     173729.25     428961.83     211638.50
-   06     1063897.74     219801.52       254461.17     29998.43     323886.60     139462.03     330931.09     213841.57
-   07     1036044.66     211663.49       291478.35     32421.14     355698.16     143994.49     362650.10     212510.93
-   08      882878.89     169267.66       239260.31     35996.60     302401.53     116716.19     305227.09     189335.10
-   09      816945.72     171263.94       248231.83     28759.56     300401.88     103796.93     268696.56     156369.27
-   10     1478082.65     306159.08       367003.51     52022.52     486950.57     201766.39     525951.82     316841.32
-   11     1264136.36     275061.82       350834.08     34681.22     428156.34     173195.72     419741.33     252068.18
-   12     1788323.11     360494.32       509480.38     51966.07     646508.85     251495.06     614021.96     386005.95
-                    </pre>
-</div>
-<div class="row">
-    <p>We can see that, sales increase in March and April, when people get money back from filing their
-        taxes, and again end of the year when people buy for the holidays. Many times stores will
-        lower the price for the holidays but the price for all items in this dataset are the same for all states,
-        all year.</p>
-                </div>
-
                 <div class="row">
-                    <p>Looking at the division of sales into categories:</p>
+                    <p><b>Looking at sales divided in to months and states:</b></p>
                 </div>
                 <div class="row">
                     <pre>
-    Categories    Total Sales                
-    Laptops       12151658.74
-    Headphones     3884416.53
-    Phones         8927200.00
-    Monitors       6349110.05
-    TVs            1438200.00
-    Appliances      787200.00
-    Cables          584284.55
-    Batteries       140572.60
+ Month     California       Georgia   Massachusetts        Maine      New York        Oregon         Texas    Washington
+    01      724151.34     149159.54       201057.75     22708.80     259829.34      92276.76     231537.58     140692.05
+    02      888850.28     176458.31       213612.59     29845.49     305372.26     119594.38     295014.52     171330.25
+    03     1122715.72     231605.38       301023.81     30406.30     367226.31     156541.73     376765.28     218688.82
+    04     1362467.59     284422.01       353392.17     42536.49     449314.88     197441.63     423919.13     275724.08
+    05     1274553.77     238842.00       328791.70     57978.76     436120.42     173729.25     428961.83     211638.50
+    06     1063897.74     219801.52       254461.17     29998.43     323886.60     139462.03     330931.09     213841.57
+    07     1036044.66     211663.49       291478.35     32421.14     355698.16     143994.49     362650.10     212510.93
+    08      882878.89     169267.66       239260.31     35996.60     302401.53     116716.19     305227.09     189335.10
+    09      816945.72     171263.94       248231.83     28759.56     300401.88     103796.93     268696.56     156369.27
+    10     1478082.65     306159.08       367003.51     52022.52     486950.57     201766.39     525951.82     316841.32
+    11     1264136.36     275061.82       350834.08     34681.22     428156.34     173195.72     419741.33     252068.18
+    12     1788323.11     360494.32       509480.38     51966.07     646508.85     251495.06     614021.96     386005.95
+                    </pre>
+                    </div>
+                    <div class="row">
+                        <p>We can see that, sales increase in March and April, when people get money back after filing 
+                            their taxes, and again end of the year when people buy presentsfor the holidays. Many 
+                            times stores will lower the price for the holidays but the prices for all items in this 
+                            dataset are the same for all states, all year.</p>
+                    </div>
+
+                    <div class="row">
+                        <p><b>Looking at the division of sales into categories:</b></p>
+                    </div>
+                    <div class="row">
+                    <pre>
+    Categories    Total Sales               Categories    Items Sold                 
+    Laptops       12151658.74               Batteries     5860        
+    Headphones     3884416.53               Headphones    4959
+    Phones         8927200.00               Cable         4710 
+    Monitors       6349110.05               Monitor       2409
+    TVs            1438200.00               Phone         1444
+    Appliances      787200.00               Laptop         885
+    Cables          584284.55               TV             481
+    Batteries       140572.60               Appliances     131 
                     </pre>
                 </div>
                 <div class="row">
-                    <p>We can see that, Laptops, Headphones and Phones make up 80% of the total sales.</p>
+                    <p>We can see that, Laptops, Headphones and Phones make up 80% of the total 
+                        sales. With the laptop category making the same amount of money as the 
+                    headphones and phones combined. </p>
+                    <p>Although, monitors also makes a lot of money, they do so by being sold in 
+                        large volumes. Financially, montitor sales are 70% of the phone sales and 
+                        half the laptop sales. In other words, we have to sell about two monitors 
+                        for every phone or about three monitors for every phone. </p>
                 </div>
                 <div class="row">
-                    <p>Looking at the individual products within the categories: </p>
+                    <p><b>Looking at the individual products within the categories:</b></p>
                 </div>
                 <div class="row">
                 <pre>
@@ -150,9 +162,7 @@ Month     California       Georgia   Massachusetts        Maine      New York   
                     <p>We can see that, despite higher prices, Apple's products outsell other products in the same category.</p>
                 </div>
                 <div class="row">
-                    <p>
-                    Looking at individual parts and what percentage they are out of totals:
-                    </p>
+                    <p><b>Looking at individual parts and what percentage they are out of totals:</b></p>
                 </div>
                 <div>
                     <pre>
@@ -173,7 +183,7 @@ Month     California       Georgia   Massachusetts        Maine      New York   
                     </p>
                 </div>
                 <div class="row">
-                    <p>Looking at items that shipped together:</p>
+                    <p><b>Looking at items that shipped together:</b></p>
                 </div>
                 <div class="row">
                     <pre>
@@ -194,50 +204,49 @@ Month     California       Georgia   Massachusetts        Maine      New York   
                     </pre>
                 </div>
                 <div class="row">
-                    <p>
-                        We can see that, most items shipped by themselves, however just under 10% 
+                    <p>We can see that, most items shipped by themselves, however just under 10% 
                         of the phones shipped with either an extra charging cable, a
-                        pair of headphones or both.</a>
-                    </p>
+                        pair of headphones or both.</p>
                 </div>
-
             </div>
-
             <div class="container  col-6 offset-3 col-12-medium">
                 <div class="row ">
                     <header class="major">
                     <h4 id="conclusions-and-suggestions"><b>Suggestions</b></h4>
                     </header>          
-                </div>
-
-                <div class="row">
+            </div>
+            <div class="row">
                     <p>This appears to be a sample of a larger 
                         dataset, with a limited number of categories 
-                        and parts. As well on the receiving, a limiited 
-                        number of states and Zip codes.
-                    </p>
+                        and parts. As well on the receiving end, a limiited 
+                        number of states and Zip codes. </p>
+                    <p>The dataset shows only sales and not profit, which 
+                        could change the conclusions if the markup of the 
+                        different products varies. </p>
                     <p>Noting the dataset is from 2019, and not skewed by
                         Covid-19 home office set up sales.</p>
                     <p>Assuming this is a reprentative sample of 
                         whole dataset with all electronics parts 
                         and all customers, I suggest the following:</p>
-
-                    <p><b>Suggest Complimentary Items:</b> When showing the phones, 
-                    accessories like charging cables and headphones 
-                    should be suggested as add-ons. When showing laptops,
-                    additions like headphones and monitors should be suggested 
-                    as add-ons.</p>     
-                    <p><b>Cables and Charging Cables:</b> At check-out, customers should 
-                    be offered to add a pack of batteries. Many times, people like
-                    to have spare batteries but it is not something people will actually
-                    go shopping for by on its own.</p>
-                    <p><b>Go the extra mile for the first time customer.</b> 
-                        Multiple customers are repeat customers. In making the first
-                    purchase easy and uneventful, the customer is likely to return for additional
-                    purchases that may or may not be related to the first purchases. Getting the first 
-                    purchase from a customer is the purchase you spend the most marketing dollar
-                    to get, after that, the customer will sell themselves the idea to buy since they 
-                    are familiar with the purchasing experience, and have enjoyed it in the past.</p>
+                    <p><b>Suggest Complimentary Items: </b>When selling phones, show the 
+                        customer phones accessories like charging cables and headphones. 
+                        When showing laptops, additions like headphones and monitors should 
+                        be suggested as add-ons. If the comlimentary products were not
+                        purchased at the time, there should be a follow up to suggest purchase.</p>     
+                    <p><b>Batteries: </b>At check-out, customers should 
+                        be offered to add a pack of batteries. Many times, people like
+                        to have spare batteries but it is not something people will actually
+                        go shopping for on its own.</p>
+                    <p><b>Go the extra mile for the first time purchase customer: </b>Multiple customers 
+                        are repeat customers. In making the first
+                        purchase easy and uneventful, the customer is likely to return for additional
+                        purchases that may or may not be related to the first purchases. Getting the first 
+                        purchase from a customer is the purchase we spend the most marketing dollar
+                        to get, after that, the customer will sell themselves the idea to buy since they 
+                        are familiar with the purchasing experience, and have enjoyed it in the past.</p>
+                    <p><b>Apple's products: </b>While Apple's products outsell the counterparts and 
+                        the customers seem to not mind the higher price, it is important to keep inventory
+                        that can ship right away.</p>    
                 </div>
             </div>
         </section>
