@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/html5up-photon.iml" filepath="$PROJECT_DIR$/.idea/html5up-photon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/testpelican.iml" filepath="$PROJECT_DIR$/.idea/testpelican.iml" />
     </modules>
   </component>
 </project>
