@@ -60,8 +60,8 @@ a:link, a:visited {
 	text-decoration: none;
 }
 a:hover, a:active {
-	background-color: #ff7400;
-	color: #fff;
+	background-color: #fff;
+	color: #ff7400;
 	text-decoration: none;
 	/*text-shadow: 1px 1px 1px #333;*/
 }
@@ -621,13 +621,13 @@ img {
     width: 50%;
   }
 }
-/*
+
 @media (min-width: 56rem) {
-  .cards_item {
+  .testimonial {
     width: 33.3333%;
   }
 }
-*/
+
 .card {
   background-color: white;
   border-radius: 0.25rem;
