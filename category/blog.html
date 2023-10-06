@@ -31,65 +31,101 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="/day-one.html">Day 1 - Set Up Pelican Blog/Website</a></h1>
+                    <h1 class="entry-title"><a href="/step-two.html">Step 2 - Understand the Pelican files</a></h1>
 <footer class="post-info">
-        <p class="published" title="2023-10-04T00:00:00-07:00">
-                Published: Wed 04 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="/tag/python.html">python</a>, </p>        </p>
+        <p class="published" title="2023-10-06T00:00:00-07:00">
+                Published: Fri 06 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="/tag/python.html">python</a>, </p>        </p>
 
 </footer><!-- /.post-info -->                    <blockquote>
 <p>The Python syntax is super easy to read and follow.
 Pelican is also very simple and ideal for you as an introduction
 to programming. This tutorial will help you set up a blog, a website
-or both depending on what need is.</p>
+or both depending on what need is. And host it on GitHub for the world to see.</p>
 </blockquote>
-<p>Day one is going to be a lot of installing and setting up. Laying the foundation for your site.</p>
-<h3>Installing Python</h3>
-<p>To install PYTHON, click <a href="https://www.python.org/downloads/">here</a>, the website should have recognized your operating system.
-<img alt="my_image" src="/images/blog-img/python-website.png" title="python website"></p>
-<h3>Working with commandline in terminal</h3>
-<p>You will be using the command line a lot from now on, now that you have decided to learn to code.</p>
-<p>1 Open the terminal on your computer </p>
-<p>2 Type <code>ls</code>. This will show the files and folders at your start position. You can also see your current folder at the bottom of the command window.</p>
-<p>3 To change position into a directory, type <code>cd &lt;directory name&gt;</code>, and to back out you <br> type <code>cd ..</code>. And again type <code>ls</code> to see what folders and files are in the current folder. Move around a bit in your computer's folder structure to get a feel for typing in command line. </p>
-<p>4 Once you are in the place where you want to make the folder where you want to put your the folder for your website, type <code>mkdir</code> and then the name of your folder, for example <code>mkdir website</code>.</p>
-<p>5 Then <code>cd website</code> to change position into your directory</p>
-<h3>Install Pelican and Set Up Your Blog / Website</h3>
-<p>Coding in Python you will regularly be using a command called pip. pip is Python's 
-package installer. You will be using pip to install various packages from 
-the Python Package Index.</p>
-<p>1 Install Pelican with <code>pip install pelican</code></p>
-<p>2 Next, set up the basic file and folder structure for the website with <code>pelican-quickstart</code>. This is called to scaffold. You will be asked the following questions, to help set up the website details. </p>
-<div class="highlight"><pre><span></span><code><span class="n">Welcome</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">pelican</span><span class="o">-</span><span class="n">quickstart</span><span class="w"> </span><span class="n">v4</span><span class="mf">.8.0</span><span class="p">.</span>
-
-<span class="n">This</span><span class="w"> </span><span class="n">script</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">help</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Pelican</span><span class="o">-</span><span class="n">based</span><span class="w"> </span><span class="n">website</span><span class="p">.</span>
-
-<span class="n">Please</span><span class="w"> </span><span class="n">answer</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">following</span><span class="w"> </span><span class="n">questions</span><span class="w"> </span><span class="n">so</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="n">script</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">generate</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">files</span>
-<span class="n">needed</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">Pelican</span><span class="p">.</span>
-
-
-<span class="o">&gt;</span><span class="w"> </span><span class="k">Where</span><span class="w"> </span><span class="n">do</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">want</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">web</span><span class="w"> </span><span class="n">site</span><span class="vm">?</span><span class="w"> </span><span class="o">[</span><span class="n">.</span><span class="o">]</span><span class="w">  </span><span class="p">(</span><span class="n">the</span><span class="w"> </span><span class="o">[</span><span class="n">.</span><span class="o">]</span><span class="w"> </span><span class="n">means</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="k">are</span><span class="w"> </span><span class="n">setting</span><span class="w"> </span><span class="n">up</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">website</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">folder</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="k">are</span><span class="w"> </span><span class="ow">in</span><span class="p">.</span><span class="w"> </span><span class="n">Hit</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">yes</span><span class="p">)</span>
-<span class="o">&gt;</span><span class="w"> </span><span class="n">What</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="n">web</span><span class="w"> </span><span class="n">site</span><span class="vm">?</span><span class="w"> </span><span class="n">My</span><span class="w"> </span><span class="n">Favorite</span><span class="w"> </span><span class="n">Yogurt</span><span class="w"> </span><span class="n">Toppings</span><span class="w"> </span><span class="p">(</span><span class="n">Type</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">website</span><span class="p">,</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">change</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="n">later</span><span class="p">.</span><span class="w"> </span><span class="n">Hit</span><span class="w"> </span><span class="k">return</span><span class="p">.</span>
-<span class="o">&gt;</span><span class="w"> </span><span class="n">Who</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">author</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="n">web</span><span class="w"> </span><span class="n">site</span><span class="vm">?</span><span class="w"> </span><span class="n">me</span><span class="w"> </span><span class="p">(</span><span class="n">type</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">pen</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">hit</span><span class="w"> </span><span class="k">return</span><span class="p">)</span>
-<span class="o">&gt;</span><span class="w"> </span><span class="n">What</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="k">language</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="n">web</span><span class="w"> </span><span class="n">site</span><span class="vm">?</span><span class="w"> </span><span class="o">[</span><span class="n">en</span><span class="o">]</span><span class="w"> </span><span class="n">en</span><span class="w"> </span><span class="p">(</span><span class="n">type</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="k">general</span><span class="w"> </span><span class="k">language</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">website</span><span class="p">,</span><span class="w"> </span><span class="n">hit</span><span class="w"> </span><span class="k">return</span><span class="p">)</span>
-<span class="o">&gt;</span><span class="w"> </span><span class="n">Do</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">want</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">specify</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">URL</span><span class="w"> </span><span class="k">prefix</span><span class="vm">?</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">g</span><span class="p">.,</span><span class="w"> </span><span class="nl">https</span><span class="p">:</span><span class="o">//</span><span class="n">example</span><span class="p">.</span><span class="n">com</span><span class="w">   </span><span class="p">(</span><span class="n">Y</span><span class="o">/</span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">website</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">part</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">bigger</span><span class="w"> </span><span class="n">website</span><span class="p">,</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">you</span><span class="s1">&#39;ll type that url, otherwise type n for no)</span>
-<span class="s1">&gt; Do you want to enable article pagination? (Y/n) y</span>
-<span class="s1">&gt; How many articles per page do you want? [10] 20</span>
-<span class="s1">&gt; What is your time zone? [Europe/Rome] America/Los_Angeles</span>
-<span class="s1">&gt; Do you want to generate a tasks.py/Makefile to automate generation and publishing? (Y/n) y</span>
-<span class="s1">&gt; Do you want to upload your website using FTP? (y/N) n (you&#39;</span><span class="n">ll</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">Github</span><span class="w"> </span><span class="n">so</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="k">no</span><span class="p">)</span>
-<span class="o">&gt;</span><span class="w"> </span><span class="n">Do</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">want</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">upload</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">website</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">SSH</span><span class="vm">?</span><span class="w"> </span><span class="p">(</span><span class="n">y</span><span class="o">/</span><span class="n">N</span><span class="p">)</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="p">(</span><span class="n">you</span><span class="s1">&#39;ll be using Github so type n for no)</span>
-<span class="s1">&gt; Do you want to upload your website using Dropbox? (y/N) n (you&#39;</span><span class="n">ll</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">Github</span><span class="w"> </span><span class="n">so</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="k">no</span><span class="p">)</span>
-<span class="o">&gt;</span><span class="w"> </span><span class="n">Do</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">want</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">upload</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">website</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">S3</span><span class="vm">?</span><span class="w"> </span><span class="p">(</span><span class="n">y</span><span class="o">/</span><span class="n">N</span><span class="p">)</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="p">(</span><span class="n">you</span><span class="s1">&#39;ll be using Github so type n for no)</span>
-<span class="s1">&gt; Do you want to upload your website using Rackspace Cloud Files? (y/N) n (you&#39;</span><span class="n">ll</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">Github</span><span class="w"> </span><span class="n">so</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="k">no</span><span class="p">)</span>
-<span class="o">&gt;</span><span class="w"> </span><span class="n">Do</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">want</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">upload</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">website</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">GitHub</span><span class="w"> </span><span class="n">Pages</span><span class="vm">?</span><span class="w"> </span><span class="p">(</span><span class="n">y</span><span class="o">/</span><span class="n">N</span><span class="p">)</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">(</span><span class="n">you</span><span class="err">&#39;</span><span class="n">ll</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">Github</span><span class="w"> </span><span class="n">so</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">yes</span><span class="p">)</span>
-<span class="o">&gt;</span><span class="w"> </span><span class="k">Is</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">personal</span><span class="w"> </span><span class="n">page</span><span class="w"> </span><span class="p">(</span><span class="n">username</span><span class="p">.</span><span class="n">github</span><span class="p">.</span><span class="n">io</span><span class="p">)</span><span class="vm">?</span><span class="w"> </span><span class="p">(</span><span class="n">y</span><span class="o">/</span><span class="n">N</span><span class="p">)</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">already</span><span class="w"> </span><span class="n">have</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">github</span><span class="w"> </span><span class="n">account</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="n">here</span><span class="p">,</span><span class="w"> </span><span class="n">otherwise</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="k">no</span><span class="p">)</span>
+<p>Step two, we're going to look at the files that was set up when we ran <code>pelican-quickstart</code></p>
+<h3>Ways to look at the files</h3>
+<p>You just use, your notepad to look at the files and the programming, however there are various integrated development environments  (IDE) that make it a lot easier.</p>
+<p>integrated development environments color codes the files, which help you navigate the files.</p>
+<ul>
+<li>When you installed <a href="https://www.python.org/downloads/">Python</a>, you also installed Idle. Idle is Python's integrated development environment.</li>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code</a>, developed by Microsoft, is another IDE. It is free to use and works well with Python also.</li>
+</ul>
+<h3>The content folder</h3>
+<p>Once you start creating pages, the <strong>content folder</strong> will contain for example your blog posts.</p>
+<h3>The output folder</h3>
+<p>The output folder will contain the files that you will be uploading </p>
+<h3>The Makefile</h3>
+<p>The Makefile is the instructions within Pelican to make the HTML files and how to serve the pages up to your browers, so you can see them.</p>
+<h3>The pelicanconf.py file</h3>
+<h4>AUTHOR = 'me'</h4>
+<p>you added this during the set up and you can change it now if you want to. remember to write within the quotation marks.</p>
+<h4>SITENAME = 'My Favorite Yogurt Toppings'</h4>
+<p>you added this during the set up and you can change it now if you want to. remember to write within the quotation marks.</p>
+<h4>SITEURL = ''</h4>
+<p>Leave it like this for now, this is what you will fill out if your blog/website will be part of a bigger website</p>
+<h4>PATH = 'content'</h4>
+<p>Leave it like this, as mentioned above this is where the posts are going. As you probably guessed, you can change this if needed.</p>
+<h4>TIMEZONE = 'America/Los_Angeles'</h4>
+<p>To find your time zone, <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">check this wikipedia page</a></p>
+<h4>DEFAULT_LANG = 'en'</h4>
+<p>To find the appropriate language code for your site, <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php">check this government page</a></p>
+<h4>The optional feed settings</h4>
+<p>You are going to leave these as is, if you decide to provide for your readers at a later date, you can read how to configure them [here](https://docs.getpelican.com/en/stable/settings.html#feed-settings</p>
+<p>The # in front of the first line means that it is a comment that pelican will skip</p>
+<div class="highlight"><pre><span></span><code><span class="gh">#</span> Feed generation is usually not desired when developing
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 </code></pre></div>
 
-<p>3 It should say, <code>Done. Your new project is available</code>.</p>
-<p>4 you should now have two folders <em>content</em> and <em>output</em> plus four files Makefile, pelicanconf.py, publishconf.py and task.py</p>
-<p>It will give us the file structure needed to customize our setup right away.</p>
-<p>Once it's done, use the CLI straight away to do the scaffolding with: pelican-quickstart</p>
-<p>Here's how your configuration should look like:</p>
+<h4>Blogroll and social links</h4>
+<p>Once, your website/blog is up we will get back to these, but for now leave them. But give some thought to other websites or blogs you want to link to. </p>
+<p>The same goes for social links, it could be your own or somebodyelses.</p>
+<div class="highlight"><pre><span></span><code># Blogroll
+LINKS = ((&#39;Pelican&#39;, &#39;https://getpelican.com/&#39;),
+         (&#39;Python.org&#39;, &#39;https://www.python.org/&#39;),
+         (&#39;Jinja2&#39;, &#39;https://palletsprojects.com/p/jinja/&#39;),
+         (&#39;You can modify those links in your config file&#39;, &#39;#&#39;),)
+
+# Social widget
+SOCIAL = ((&#39;You can add links in your config file&#39;, &#39;#&#39;),
+          (&#39;Another social link&#39;, &#39;#&#39;),)
+</code></pre></div>
+
+<h4>DEFAULT_PAGINATION = 20</h4>
+<p>The number is how many posts you want on one page before there is next page link</p>
+<h4>RELATIVE_URLS = True</h4>
+<p>Again, this is relevant if your site will be part of a larger website.</p>
+<div class="highlight"><pre><span></span><code><span class="gh">#</span> Uncomment following line if you want document-relative URLs when developing
+<span class="gh">#</span>RELATIVE_URLS = True
+</code></pre></div>
+
+<h3>The publishconf.py file</h3>
+<p>You will not be using "make publish" for this project, but if you are using it for future projects you will need to fill out below and/or uncomment lines depending</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># This file is only used if you use `make publish` or</span>
+<span class="c1"># explicitly specify it as your config file.</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">curdir</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">pelicanconf</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># If your site is available via HTTPS, make sure SITEURL begins with https://</span>
+<span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="n">RELATIVE_URLS</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="n">FEED_ALL_ATOM</span> <span class="o">=</span> <span class="s1">&#39;feeds/all.atom.xml&#39;</span>
+<span class="n">CATEGORY_FEED_ATOM</span> <span class="o">=</span> <span class="s1">&#39;feeds/</span><span class="si">{slug}</span><span class="s1">.atom.xml&#39;</span>
+
+<span class="n">DELETE_OUTPUT_DIRECTORY</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="c1"># Following items are often useful when publishing</span>
+
+<span class="c1">#DISQUS_SITENAME = &quot;&quot;</span>
+<span class="c1">#GOOGLE_ANALYTICS = &quot;&quot;</span>
+</code></pre></div>
                     <!-- -->
                 </article>
             </aside><!-- /#featured -->
@@ -97,6 +133,26 @@ the Python Package Index.</p>
                     <h2>Previous Articles</h1>
                     <hr />
                     <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/step-one.html" rel="bookmark"
+                           title="Permalink to Step 1 - Set Up Pelican Blog/Website">Step 1 - Set Up Pelican Blog/Website</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <p class="published" title="2023-10-04T00:00:00-07:00">
+                Published: Wed 04 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="/tag/python.html">python</a>, </p>        </p>
+
+</footer><!-- /.post-info -->                <blockquote>
+<p>The Python syntax is super easy to read and follow.
+Pelican is also very simple and ideal for you as an introduction
+to programming. This tutorial will help you set up a blog, a website
+or both depending on what need is. And host it on GitHub for the world …</p></blockquote>
+                <a class="readmore" href="/step-one.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
