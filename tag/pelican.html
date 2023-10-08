@@ -31,10 +31,10 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="/step-two.html">Step 2 - Understand the Pelican files</a></h1>
+                    <h1 class="entry-title"><a href="/step-three.html">Step 3 - Adding the First Page</a></h1>
 <footer class="post-info">
-        <p class="published" title="2023-10-06T00:00:00-07:00">
-                Published: Fri 06 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="/tag/python.html">python</a>, </p>        </p>
+        <p class="published" title="2023-10-07T00:00:00-07:00">
+                Published: Sat 07 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="/tag/python.html">python</a>, </p>        </p>
 
 </footer><!-- /.post-info -->                    <blockquote>
 <p>The Python syntax is super easy to read and follow.
@@ -42,90 +42,73 @@ Pelican is also very simple and ideal for you as an introduction
 to programming. This tutorial will help you set up a blog, a website
 or both depending on what need is. And host it on GitHub for the world to see.</p>
 </blockquote>
-<p>Step two, we're going to look at the files that was set up when we ran <code>pelican-quickstart</code></p>
-<h3>Ways to look at the files</h3>
-<p>You just use, your notepad to look at the files and the programming, however there are various integrated development environments  (IDE) that make it a lot easier.</p>
-<p>integrated development environments color codes the files, which help you navigate the files.</p>
-<ul>
-<li>When you installed <a href="https://www.python.org/downloads/">Python</a>, you also installed Idle. Idle is Python's integrated development environment.</li>
-<li><a href="https://code.visualstudio.com/">Visual Studio Code</a>, developed by Microsoft, is another IDE. It is free to use and works well with Python also.</li>
-</ul>
-<h3>The content folder</h3>
-<p>Once you start creating pages, the <strong>content folder</strong> will contain for example your blog posts.</p>
-<h3>The output folder</h3>
-<p>The output folder will contain the files that you will be uploading </p>
-<h3>The Makefile</h3>
-<p>The Makefile is the instructions within Pelican to make the HTML files and how to serve the pages up to your browers, so you can see them.</p>
-<h3>The pelicanconf.py file</h3>
-<h4>AUTHOR = 'me'</h4>
-<p>you added this during the set up and you can change it now if you want to. remember to write within the quotation marks.</p>
-<h4>SITENAME = 'My Favorite Yogurt Toppings'</h4>
-<p>you added this during the set up and you can change it now if you want to. remember to write within the quotation marks.</p>
-<h4>SITEURL = ''</h4>
-<p>Leave it like this for now, this is what you will fill out if your blog/website will be part of a bigger website</p>
-<h4>PATH = 'content'</h4>
-<p>Leave it like this, as mentioned above this is where the posts are going. As you probably guessed, you can change this if needed.</p>
-<h4>TIMEZONE = 'America/Los_Angeles'</h4>
-<p>To find your time zone, <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">check this wikipedia page</a></p>
-<h4>DEFAULT_LANG = 'en'</h4>
-<p>To find the appropriate language code for your site, <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php">check this government page</a></p>
-<h4>The optional feed settings</h4>
-<p>You are going to leave these as is, if you decide to provide for your readers at a later date, you can read how to configure them [here](https://docs.getpelican.com/en/stable/settings.html#feed-settings</p>
-<p>The # in front of the first line means that it is a comment that pelican will skip</p>
-<div class="highlight"><pre><span></span><code><span class="gh">#</span> Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
+<p>Step three, creating the first page of your site. Most websites need pages like an about page or author bios. Information on these pages rarely change.</p>
+<p>In the terminal, reorient yourself by typing <code>ls</code>, and make sure you are in your root folder, <code>cd</code> in and <code>cd ..</code> out of folders until you see</p>
+<div class="highlight"><pre><span></span><code>ls
+content     pelicanconf.py  tasks.py
+output      publishconf.py
 </code></pre></div>
 
-<h4>Blogroll and social links</h4>
-<p>Once, your website/blog is up we will get back to these, but for now leave them. But give some thought to other websites or blogs you want to link to. </p>
-<p>The same goes for social links, it could be your own or somebodyelses.</p>
-<div class="highlight"><pre><span></span><code># Blogroll
-LINKS = ((&#39;Pelican&#39;, &#39;https://getpelican.com/&#39;),
-         (&#39;Python.org&#39;, &#39;https://www.python.org/&#39;),
-         (&#39;Jinja2&#39;, &#39;https://palletsprojects.com/p/jinja/&#39;),
-         (&#39;You can modify those links in your config file&#39;, &#39;#&#39;),)
+<h3>Creating the first page</h3>
+<ol>
+<li>Type <code>cd content</code> (you can type con and this the tab key, it should finish the word content and you can then just hit return)</li>
+<li>Type <code>mkdir pages</code> and then <code>cd pages</code>.</li>
+<li>Type <code>touch about.md</code> (or whatever page you planned on adding, the important part is the <code>.md</code>)</li>
+<li>In Idle, Visual Studio Code or the IDE you installed in last step, open the content folder and then the Pages folder. Double-click on the file you just made.</li>
+<li>Type</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="n">Title</span><span class="o">:</span><span class="w"> </span><span class="n">About</span>
 
-# Social widget
-SOCIAL = ((&#39;You can add links in your config file&#39;, &#39;#&#39;),
-          (&#39;Another social link&#39;, &#39;#&#39;),)
+<span class="n">I</span><span class="w"> </span><span class="n">love</span><span class="w"> </span><span class="n">yogurt</span><span class="o">!</span>
+
+<span class="n">This</span><span class="w"> </span><span class="n">page</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">tribute</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="k">this</span><span class="w"> </span><span class="n">ancient</span><span class="w"> </span><span class="n">food</span><span class="o">.</span>
+
+<span class="n">Yogurt</span><span class="w"> </span><span class="n">has</span><span class="w"> </span><span class="n">ancient</span><span class="w"> </span><span class="n">roots</span><span class="o">.</span><span class="w"> </span><span class="n">Its</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="n">known</span><span class="w"> </span>
+<span class="n">appearance</span><span class="w"> </span><span class="n">was</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Neolithic</span><span class="w"> </span><span class="n">period</span><span class="w"> </span>
+<span class="o">(</span><span class="n">around</span><span class="w"> </span><span class="mi">5000</span><span class="w"> </span><span class="n">BC</span><span class="o">)</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">Mesopotamia</span><span class="o">,</span><span class="w"> </span><span class="n">when</span><span class="w"> </span>
+<span class="n">milk</span><span class="o">-</span><span class="n">producing</span><span class="w"> </span><span class="n">animals</span><span class="w"> </span><span class="n">were</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="n">domesticated</span><span class="o">.</span>
+
+<span class="n">It</span><span class="w"> </span><span class="n">has</span><span class="w"> </span><span class="n">been</span><span class="w"> </span><span class="n">found</span><span class="w"> </span><span class="n">throughout</span><span class="w"> </span><span class="n">Asia</span><span class="o">,</span><span class="w"> </span><span class="n">Europe</span><span class="o">,</span><span class="w"> </span><span class="n">and</span><span class="w"> </span>
+<span class="n">the</span><span class="w"> </span><span class="n">Middle</span><span class="w"> </span><span class="n">East</span><span class="o">.</span>
+
+<span class="n">That</span><span class="w"> </span><span class="n">makes</span><span class="w"> </span><span class="n">yogurt</span><span class="w"> </span><span class="n">well</span><span class="w"> </span><span class="n">over</span><span class="w"> </span><span class="mi">7</span><span class="o">,</span><span class="mi">000</span><span class="w"> </span><span class="n">years</span><span class="w"> </span><span class="n">old</span><span class="o">!</span>
 </code></pre></div>
 
-<h4>DEFAULT_PAGINATION = 20</h4>
-<p>The number is how many posts you want on one page before there is next page link</p>
-<h4>RELATIVE_URLS = True</h4>
-<p>Again, this is relevant if your site will be part of a larger website.</p>
-<div class="highlight"><pre><span></span><code><span class="gh">#</span> Uncomment following line if you want document-relative URLs when developing
-<span class="gh">#</span>RELATIVE_URLS = True
+<p>and hit save.</p>
+<h3>Make the HTML files</h3>
+<ol>
+<li>Back in terminal make sure you <code>cd ..</code> out to the root folder and type <code>make html</code>. you should see</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="mf">1</span><span class="w">   </span><span class="n">make</span><span class="w"> </span><span class="n">html</span>
+<span class="mf">2</span><span class="w">   </span><span class="s">&quot;pelican&quot;</span><span class="w"> </span><span class="s">&quot;/Users/yourname/Desktop/website/content&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="s">&quot;/Users/yourname/Desktop/website/output&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">s</span><span class="w"> </span><span class="s">&quot;/Users/yourname/Desktop/website/pelicanconf.py&quot;</span><span class="w"> </span>
+<span class="mf">3</span><span class="w">   </span><span class="err">[</span><span class="mf">21</span><span class="p">:</span><span class="mf">13</span><span class="p">:</span><span class="mf">48</span><span class="err">]</span><span class="w"> </span><span class="n">WARNING</span><span class="w">  </span><span class="n">Watched</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="n">does</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">exist</span><span class="p">:</span><span class="w">                       </span><span class="nb">log</span><span class="mf">.</span><span class="n">py</span><span class="p">:</span><span class="mf">91</span>
+<span class="mf">4</span><span class="w">                    </span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">yourname</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">website</span><span class="o">/</span><span class="kr">cont</span><span class="n">ent</span><span class="o">/</span><span class="n">images</span><span class="w">              </span>
+<span class="mf">5</span><span class="w">   </span><span class="n">Done</span><span class="p">:</span><span class="w"> </span><span class="n">Processed</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="n">articles</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="n">drafts</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="n">hidden</span><span class="w"> </span><span class="n">articles</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="n">page</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="n">hidden</span><span class="w"> </span><span class="n">pages</span><span class="w"> </span>
+<span class="mf">6</span><span class="w">   </span><span class="ow">and</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="n">draft</span><span class="w"> </span><span class="n">pages</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="mf">0.49</span><span class="w"> </span><span class="n">seconds</span><span class="mf">.</span>
 </code></pre></div>
 
-<h3>The publishconf.py file</h3>
-<p>You will not be using "make publish" for this project, but if you are using it for future projects you will need to fill out below and/or uncomment lines depending</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># This file is only used if you use `make publish` or</span>
-<span class="c1"># explicitly specify it as your config file.</span>
-
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">sys</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">curdir</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">pelicanconf</span> <span class="kn">import</span> <span class="o">*</span>
-
-<span class="c1"># If your site is available via HTTPS, make sure SITEURL begins with https://</span>
-<span class="n">SITEURL</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-<span class="n">RELATIVE_URLS</span> <span class="o">=</span> <span class="kc">False</span>
-
-<span class="n">FEED_ALL_ATOM</span> <span class="o">=</span> <span class="s1">&#39;feeds/all.atom.xml&#39;</span>
-<span class="n">CATEGORY_FEED_ATOM</span> <span class="o">=</span> <span class="s1">&#39;feeds/</span><span class="si">{slug}</span><span class="s1">.atom.xml&#39;</span>
-
-<span class="n">DELETE_OUTPUT_DIRECTORY</span> <span class="o">=</span> <span class="kc">True</span>
-
-<span class="c1"># Following items are often useful when publishing</span>
-
-<span class="c1">#DISQUS_SITENAME = &quot;&quot;</span>
-<span class="c1">#GOOGLE_ANALYTICS = &quot;&quot;</span>
+<p>In line 3 you are warned that a path doesn't exsist.
+In line 4 you can see what path it is. The program is looking for an image folder
+Line 5-6 shows what html files where made <strong>1 page</strong> in 0.49 seconds -- times may vary.</p>
+<h3>Serve the HTML files</h3>
+<ol>
+<li>Still in terminal type <code>make serve</code></li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="mf">1</span><span class="w">   </span><span class="err">$</span><span class="w"> </span><span class="n">make</span><span class="w"> </span><span class="n">serve</span>
+<span class="mf">2</span><span class="w">   </span><span class="s">&quot;pelican&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">l</span><span class="w"> </span><span class="s">&quot;/Users/yourname/Desktop/website/content&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="s">&quot;/Users/yourname/Desktop/website/output&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">s</span><span class="w"> </span><span class="s">&quot;/Users/yourname/Desktop/website/pelicanconf.py&quot;</span><span class="w"> </span>
+<span class="mf">3</span><span class="w">   </span><span class="n">Serving</span><span class="w"> </span><span class="n">site</span><span class="w"> </span><span class="n">at</span><span class="p">:</span><span class="w"> </span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0.0.1</span><span class="p">:</span><span class="mf">8000</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Tap</span><span class="w"> </span><span class="n">CTRL</span><span class="o">-</span><span class="n">C</span><span class="w"> </span><span class="kr">to</span><span class="w"> </span><span class="kr">stop</span>
 </code></pre></div>
+
+<p>In line 3, serving site, has nothing to do with yogurt. It has to do with how you'll be able to see your website in your browser.</p>
+<h3>View your new page</h3>
+<ol>
+<li>Copy and paste <code>http://127.0.0.1:8000</code> into your browser and hit reply</li>
+<li>You should now see</li>
+</ol>
+<p><img alt="about_page" src="/images/blog-img/about-page.png" title="about page"></p>
+<h3>Make it stick</h3>
+<p>Take some time to recognize the different parts of the website and where you would change them.</p>
+<p>Also recognize the two headers for <strong>links</strong> and <strong>social</strong> and (again) think about what links you'd want there.</p>
                     <!-- -->
                 </article>
             </aside><!-- /#featured -->
@@ -133,6 +116,26 @@ SOCIAL = ((&#39;You can add links in your config file&#39;, &#39;#&#39;),
                     <h2>Previous Articles</h1>
                     <hr />
                     <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/step-two.html" rel="bookmark"
+                           title="Permalink to Step 2 - Understand the Pelican files and folders">Step 2 - Understand the Pelican files and folders</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <p class="published" title="2023-10-06T00:00:00-07:00">
+                Published: Fri 06 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="/tag/python.html">python</a>, </p>        </p>
+
+</footer><!-- /.post-info -->                <blockquote>
+<p>The Python syntax is super easy to read and follow.
+Pelican is also very simple and ideal for you as an introduction
+to programming. This tutorial will help you set up a blog, a website
+or both depending on what need is. And host it on GitHub for the world …</p></blockquote>
+                <a class="readmore" href="/step-two.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
