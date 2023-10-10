@@ -31,84 +31,59 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="/step-three.html">Step 3 - Add the First Page</a></h1>
+                    <h1 class="entry-title"><a href="/step-four.html">Step 4 - Fix Errors</a></h1>
 <footer class="post-info">
         <p class="published" title="2023-10-07T00:00:00-07:00">
                 Published: Sat 07 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="/tag/python.html">python</a>, </p>        </p>
 
 </footer><!-- /.post-info -->                    <blockquote>
+<p>When things go wrong, error messages are your best friends.</p>
+</blockquote>
 <p>The Python syntax is super easy to read and follow.
 Pelican is also very simple and ideal for you as an introduction
 to programming. This tutorial will help you set up a blog, a website
 or both depending on what need is. And host it on GitHub for the world to see.</p>
-</blockquote>
-<p>Step three, creating the first page of your site. Most websites need pages like an about page or author bios. Information on these pages rarely change.</p>
-<p>In the terminal, reorient yourself by typing <code>ls</code>, and make sure you are in your root folder, <code>cd</code> in and <code>cd ..</code> out of folders until you see</p>
-<div class="highlight"><pre><span></span><code>ls
-content     pelicanconf.py  tasks.py
-output      publishconf.py
+<p>In step three, you saw the following two error messages.</p>
+<ul>
+<li>WARNING  Watched path does not exist:  /Users/yourname/Desktop/website/content/images </li>
+<li>WARNING  Unable to find `/favicon.ico` or variations: </li>
+</ul>
+<h3>Error 1: Add the images folder</h3>
+<ol>
+<li>Make sure you are in the root folder by typing <code>ls</code>. If you need to move around, <code>cd &lt;foldername&gt;</code> in and <code>cd ..</code> out of folders till you are there.</li>
+<li>Type <code>cd content</code>, to move into the content folder and <code>mkdir image</code> to make the missing image folder.</li>
+<li>That is it. You will be using the image folder for images you will add in the next steps.</li>
+</ol>
+<h3>Error 2: What is a favicon</h3>
+<p>A favicon is that little icon that is on the tabs in your browser, like in the image.</p>
+<p><img alt="favicon image" src="/images/blog-img/favicon-example.png" title="favicon"></p>
+<h3>Make a favicon</h3>
+<p>Some applications can save an image as a .ico. If you don't have such an application that are webistes that will do the job for you. </p>
+<p>The page I used is https://www.icoconverter.com/. As you can see from the image it is limited what you can see, so keep it simple.</p>
+<p>Make sure the favicon is saved as favicon.ico.</p>
+<p>If you are following along, you can download the favicon <a href="/favicon.ico">here</a>.</p>
+<h3>Add new folder</h3>
+<p>In terminal, navigate to the content folder and <code>mkdir extra</code></p>
+<h3>Add Lines to pelicanconf.py</h3>
+<p>Open the pelicanconf.py file and add the following lines at the bottom of the file.</p>
+<p>The lines are telling pelican that there is a new folder to hold static files. The folder is called extra, because it'll hold different extra files and the only thing they have in common is that they are different.</p>
+<div class="highlight"><pre><span></span><code>STATIC_PATHS = [
+    &#39;images&#39;,
+    &#39;extra&#39;,  # this is the folder we&#39;ll add
+]
+EXTRA_PATH_METADATA = {
+    &#39;extra/favicon.ico&#39;: {&#39;path&#39;: &#39;favicon.ico&#39;},  # this is the direction for Pelican to find the favicon.
+}
 </code></pre></div>
 
-<h3>Creating the first page</h3>
+<h3>Add the favicon</h3>
+<p>Drag and drop your favicon file into the extra folder.</p>
+<h3>Check out your work</h3>
 <ol>
-<li>Type <code>cd content</code> (you can type con and this the tab key, it should finish the word content and you can then just hit return)</li>
-<li>Type <code>mkdir pages</code> and then <code>cd pages</code>.</li>
-<li>Type <code>touch about.md</code> (or whatever page you planned on adding, the important part is the <code>.md</code>)</li>
-<li>In Idle, Visual Studio Code or the IDE you installed in last step, open the content folder and then the Pages folder. Double-click on the file you just made.</li>
-<li>Type</li>
+<li><code>make html</code> and <code>make serve</code></li>
+<li>Your page may look something like this.
+<img alt="Website with favicon" src="/images/blog-img/website-with-favicon.jpg" title="website with favicon"></li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="n">Title</span><span class="o">:</span><span class="w"> </span><span class="n">About</span>
-
-<span class="n">I</span><span class="w"> </span><span class="n">love</span><span class="w"> </span><span class="n">yogurt</span><span class="o">!</span>
-
-<span class="n">This</span><span class="w"> </span><span class="n">page</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">tribute</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="k">this</span><span class="w"> </span><span class="n">ancient</span><span class="w"> </span><span class="n">food</span><span class="o">.</span>
-
-<span class="n">Yogurt</span><span class="w"> </span><span class="n">has</span><span class="w"> </span><span class="n">ancient</span><span class="w"> </span><span class="n">roots</span><span class="o">.</span><span class="w"> </span><span class="n">Its</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="n">known</span><span class="w"> </span>
-<span class="n">appearance</span><span class="w"> </span><span class="n">was</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Neolithic</span><span class="w"> </span><span class="n">period</span><span class="w"> </span>
-<span class="o">(</span><span class="n">around</span><span class="w"> </span><span class="mi">5000</span><span class="w"> </span><span class="n">BC</span><span class="o">)</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">Mesopotamia</span><span class="o">,</span><span class="w"> </span><span class="n">when</span><span class="w"> </span>
-<span class="n">milk</span><span class="o">-</span><span class="n">producing</span><span class="w"> </span><span class="n">animals</span><span class="w"> </span><span class="n">were</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="n">domesticated</span><span class="o">.</span>
-
-<span class="n">It</span><span class="w"> </span><span class="n">has</span><span class="w"> </span><span class="n">been</span><span class="w"> </span><span class="n">found</span><span class="w"> </span><span class="n">throughout</span><span class="w"> </span><span class="n">Asia</span><span class="o">,</span><span class="w"> </span><span class="n">Europe</span><span class="o">,</span><span class="w"> </span><span class="n">and</span><span class="w"> </span>
-<span class="n">the</span><span class="w"> </span><span class="n">Middle</span><span class="w"> </span><span class="n">East</span><span class="o">.</span>
-
-<span class="n">That</span><span class="w"> </span><span class="n">makes</span><span class="w"> </span><span class="n">yogurt</span><span class="w"> </span><span class="n">well</span><span class="w"> </span><span class="n">over</span><span class="w"> </span><span class="mi">7</span><span class="o">,</span><span class="mi">000</span><span class="w"> </span><span class="n">years</span><span class="w"> </span><span class="n">old</span><span class="o">!</span>
-</code></pre></div>
-
-<p>and hit save.</p>
-<h3>Make the HTML files</h3>
-<ol>
-<li>Back in terminal make sure you <code>cd ..</code> out to the root folder and type <code>make html</code>. you should see</li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="mf">1</span><span class="w">   </span><span class="n">make</span><span class="w"> </span><span class="n">html</span>
-<span class="mf">2</span><span class="w">   </span><span class="s">&quot;pelican&quot;</span><span class="w"> </span><span class="s">&quot;/Users/yourname/Desktop/website/content&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="s">&quot;/Users/yourname/Desktop/website/output&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">s</span><span class="w"> </span><span class="s">&quot;/Users/yourname/Desktop/website/pelicanconf.py&quot;</span><span class="w"> </span>
-<span class="mf">3</span><span class="w">   </span><span class="err">[</span><span class="mf">21</span><span class="p">:</span><span class="mf">13</span><span class="p">:</span><span class="mf">48</span><span class="err">]</span><span class="w"> </span><span class="n">WARNING</span><span class="w">  </span><span class="n">Watched</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="n">does</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">exist</span><span class="p">:</span><span class="w">                       </span><span class="nb">log</span><span class="mf">.</span><span class="n">py</span><span class="p">:</span><span class="mf">91</span>
-<span class="mf">4</span><span class="w">                    </span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">yourname</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">website</span><span class="o">/</span><span class="kr">cont</span><span class="n">ent</span><span class="o">/</span><span class="n">images</span><span class="w">              </span>
-<span class="mf">5</span><span class="w">   </span><span class="n">Done</span><span class="p">:</span><span class="w"> </span><span class="n">Processed</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="n">articles</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="n">drafts</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="n">hidden</span><span class="w"> </span><span class="n">articles</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="n">page</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="n">hidden</span><span class="w"> </span><span class="n">pages</span><span class="w"> </span>
-<span class="mf">6</span><span class="w">   </span><span class="ow">and</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="n">draft</span><span class="w"> </span><span class="n">pages</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="mf">0.49</span><span class="w"> </span><span class="n">seconds</span><span class="mf">.</span>
-</code></pre></div>
-
-<p>In line 3 you are warned that a path doesn't exsist.
-In line 4 you can see what path it is. The program is looking for an image folder
-Line 5-6 shows what html files where made <strong>1 page</strong> in 0.49 seconds -- times may vary.</p>
-<h3>Serve the HTML files</h3>
-<ol>
-<li>Still in terminal type <code>make serve</code></li>
-</ol>
-<div class="highlight"><pre><span></span><code><span class="mf">1</span><span class="w">   </span><span class="err">$</span><span class="w"> </span><span class="n">make</span><span class="w"> </span><span class="n">serve</span>
-<span class="mf">2</span><span class="w">   </span><span class="s">&quot;pelican&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">l</span><span class="w"> </span><span class="s">&quot;/Users/yourname/Desktop/website/content&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">o</span><span class="w"> </span><span class="s">&quot;/Users/yourname/Desktop/website/output&quot;</span><span class="w"> </span><span class="o">-</span><span class="n">s</span><span class="w"> </span><span class="s">&quot;/Users/yourname/Desktop/website/pelicanconf.py&quot;</span><span class="w"> </span>
-<span class="mf">3</span><span class="w">   </span><span class="n">Serving</span><span class="w"> </span><span class="n">site</span><span class="w"> </span><span class="n">at</span><span class="p">:</span><span class="w"> </span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0.0.1</span><span class="p">:</span><span class="mf">8000</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">Tap</span><span class="w"> </span><span class="n">CTRL</span><span class="o">-</span><span class="n">C</span><span class="w"> </span><span class="kr">to</span><span class="w"> </span><span class="kr">stop</span>
-</code></pre></div>
-
-<p>In line 3, serving site, has nothing to do with yogurt. It has to do with how you'll be able to see your website in your browser.</p>
-<h3>View your new page</h3>
-<ol>
-<li>Copy and paste <code>http://127.0.0.1:8000</code> into your browser and hit reply</li>
-<li>You should now see</li>
-</ol>
-<p><img alt="about_page" src="/images/blog-img/about-page.png" title="about page"></p>
-<h3>Make it stick</h3>
-<p>Take some time to recognize the different parts of the website and where you would change them.</p>
-<p>Also recognize the two headers for <strong>links</strong> and <strong>social</strong> and (again) think about what links you'd want there.</p>
                     <!-- -->
                 </article>
             </aside><!-- /#featured -->
@@ -116,6 +91,27 @@ Line 5-6 shows what html files where made <strong>1 page</strong> in 0.49 second
                     <h2>Previous Articles</h1>
                     <hr />
                     <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/step-three.html" rel="bookmark"
+                           title="Permalink to Step 3 - Add the First Page">Step 3 - Add the First Page</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <p class="published" title="2023-10-07T00:00:00-07:00">
+                Published: Sat 07 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="/tag/python.html">python</a>, </p>        </p>
+
+</footer><!-- /.post-info -->                <blockquote>
+<p>Step three, creating the first page of your site. Most websites need pages like an about page or author bios. Information on these pages rarely change.</p>
+</blockquote>
+<p>The Python syntax is super easy to read and follow.
+Pelican is also very simple and ideal for you as an introduction
+to programming …</p>
+                <a class="readmore" href="/step-three.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
@@ -129,10 +125,11 @@ Line 5-6 shows what html files where made <strong>1 page</strong> in 0.49 second
                 Published: Fri 06 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="/tag/python.html">python</a>, </p>        </p>
 
 </footer><!-- /.post-info -->                <blockquote>
+<p>Step two, we're going to look at the files that was set up when we ran <code>pelican-quickstart</code></p>
+</blockquote>
 <p>The Python syntax is super easy to read and follow.
 Pelican is also very simple and ideal for you as an introduction
-to programming. This tutorial will help you set up a blog, a website
-or both depending on what need is. And host it on GitHub for the world …</p></blockquote>
+to programming. This tutorial will help you set up a blog …</p>
                 <a class="readmore" href="/step-two.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
@@ -149,10 +146,12 @@ or both depending on what need is. And host it on GitHub for the world …</p></
                 Published: Wed 04 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="/tag/python.html">python</a>, </p>        </p>
 
 </footer><!-- /.post-info -->                <blockquote>
+<p>Step one is going to be a lot of installing and setting up. Laying the foundation 
+for your site.</p>
+</blockquote>
 <p>The Python syntax is super easy to read and follow.
 Pelican is also very simple and ideal for you as an introduction
-to programming. This tutorial will help you set up a blog, a website
-or both depending on what need is. And host it on GitHub for the world …</p></blockquote>
+to programming. This tutorial will help you set up …</p>
                 <a class="readmore" href="/step-one.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
