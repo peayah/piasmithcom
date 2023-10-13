@@ -31,51 +31,51 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="/step-five.html">Step 5 - The Blog</a></h1>
+                    <h1 class="entry-title"><a href="/step-6.html">Step 6 - Adding Details for the Reader</a></h1>
 <footer class="post-info">
-        <p class="published" title="2023-10-10T00:00:00-07:00">
-                Published: Tue 10 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="/tag/python.html">python</a>, </p>        </p>
+        <p class="published" title="2023-10-13T00:00:00-07:00">
+                Published: Fri 13 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="/tag/python.html">python</a>, </p>        </p>
 
 </footer><!-- /.post-info -->                    <blockquote>
-<p>Blogs can be a great way to share your interest, knowledge or when you travel, you can share your adventure in a blog.</p>
+<p>The two main reasons people use the internet are to be entertained and seek infomation. </p>
 </blockquote>
 <p>The Python syntax is super easy to read and follow.
 Pelican is also very simple and ideal for you as an introduction
 to programming. This tutorial will help you set up a blog, a website
 or both depending on what need is. And host it on GitHub for the world to see.</p>
-<p>Setting the blog up is done a just a few steps, the hard part is to consistently write blog post, week end and week out.</p>
-<h3>Upload Images for the first page</h3>
-<p>If you are following along, download these two images and drop them in the images folder <a href="/strawberries.jpg">strawberries image</a> and <a href="/strawyo.jpg">strawberries and yogurt image</a>.</p>
-<h3>Setting Up Blog</h3>
+<p>In step six, you will fill in a few details before you in the next step will upload and host it on GitHub</p>
+<h3>Adding Blog or website links</h3>
 <ol>
-<li><code>cd</code> in and <code>cd ..</code> out of folders, till you are in content.</li>
-<li><code>mkdir Blog</code> or <code>mkdir My Yogurt Journey</code> or whatever name is approprite for your subject matter.</li>
-<li><code>cd Blog</code></li>
-<li><code>touch firstpost.md</code></li>
-<li>Type the following in the file</li>
+<li>Open pelicanconf.py</li>
+<li>Add blog links</li>
+<li>The first part, between the first two apostrophes is the text you see, the second part is the url for the page.</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="mi">1</span><span class="w"> </span><span class="nl">Title</span><span class="p">:</span><span class="w"> </span><span class="n">Strawberries</span>
-<span class="mi">2</span><span class="w"> </span><span class="nc">Date</span><span class="err">:</span><span class="w"> </span><span class="mi">2023</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">01</span>
-<span class="mi">3</span><span class="w"> </span><span class="nl">Category</span><span class="p">:</span><span class="w"> </span><span class="n">My</span><span class="w"> </span><span class="n">Yogurt</span><span class="w"> </span><span class="n">Journey</span>
-<span class="mi">4</span><span class="w"> </span><span class="nl">Slug</span><span class="p">:</span><span class="w"> </span><span class="n">strawberries</span>
-
-<span class="mi">5</span><span class="w"> </span><span class="err">!</span><span class="o">[</span><span class="n">strawberries</span><span class="o">]</span><span class="p">(</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">strawberries</span><span class="p">.</span><span class="n">jpg</span><span class="w"> </span><span class="ss">&quot;strawberries&quot;</span><span class="p">)</span>
-
-<span class="mi">6</span><span class="w"> </span><span class="n">During</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">Summer</span><span class="w"> </span><span class="n">months</span><span class="w"> </span><span class="k">when</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">have</span><span class="w"> </span><span class="n">strawberries</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">garden</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="ow">like</span><span class="w"> </span><span class="n">adding</span><span class="w"> </span><span class="n">cut</span><span class="w"> </span><span class="n">strawberries</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">plain</span><span class="w"> </span><span class="n">yogurt</span><span class="p">.</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="ow">like</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">serve</span><span class="w"> </span><span class="n">them</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">glasses</span><span class="w"> </span><span class="n">so</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">see</span><span class="w"> </span><span class="n">fruit</span><span class="w"> </span><span class="n">even</span><span class="w"> </span><span class="k">when</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">covered</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">yogurt</span><span class="p">.</span>
-
-<span class="mi">7</span><span class="w"> </span><span class="err">!</span><span class="o">[</span><span class="n">strawberries and yogurt</span><span class="o">]</span><span class="p">(</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">strawyo</span><span class="p">.</span><span class="n">jpg</span><span class="w"> </span><span class="ss">&quot;yogurt with strawberries&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code>LINKS = ((&#39;Chobani Greek Plain Yogurt&#39;, &#39;https://www.chobani.com/&#39;),
+        (&#39;Fage Greek Plain Yogurt&#39;, &#39;https://usa.fage/&#39;),
+        (&#39;Wallaby Organic Aussie Greek Whole Milk Plain Yogurt&#39;, &#39;https://wallabyyogurt.com/&#39;),)
 </code></pre></div>
 
-<h3>See Your First Blog Post</h3>
+<h3>Adding Social Links</h3>
+<ol>
+<li>Also in pelicanconf.py</li>
+<li>Add social links</li>
+<li>The first part, between the first two apostrophes is the text you see, the second part is the link to what you are linking to.</li>
+</ol>
+<div class="highlight"><pre><span></span><code># Social widget
+SOCIAL = ((&#39;The True Yogurt Lover&#39;, &#39;#&#39;),
+        (&#39;Not Just Another Yo&#39;, &#39;#&#39;),)
+</code></pre></div>
+
+<h3>Adding a few more blog posts</h3>
+<ol>
+<li>In preparation for next step's upload, you can add a few more posts to the blog.</li>
+</ol>
+<h3>See the Website</h3>
 <ol>
 <li>In terminal, <code>make html</code> and then <code>make serve</code></li>
-<li>
-<p>The page in your browser, should look something like this.</p>
-</li>
-<li>
-<p><img alt="first blog post" src="/images/blog-img/firstblogpost.jpg" title="firstblogpost"></p>
-</li>
+<li>The page in your browser, should look something like this.</li>
 </ol>
+<p><img alt="website with changes" src="/images/blog-img/thechanges.jpg" title="thechanges"></p>
                     <!-- -->
                 </article>
             </aside><!-- /#featured -->
@@ -83,6 +83,27 @@ or both depending on what need is. And host it on GitHub for the world to see.</
                     <h2>Previous Articles</h1>
                     <hr />
                     <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/step-five.html" rel="bookmark"
+                           title="Permalink to Step 5 - The Blog">Step 5 - The Blog</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <p class="published" title="2023-10-10T00:00:00-07:00">
+                Published: Tue 10 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="/tag/python.html">python</a>, </p>        </p>
+
+</footer><!-- /.post-info -->                <blockquote>
+<p>Blogs can be a great way to share your interest, knowledge or when you travel, you can share your adventure in a blog.</p>
+</blockquote>
+<p>The Python syntax is super easy to read and follow.
+Pelican is also very simple and ideal for you as an introduction
+to programming. This tutorial will …</p>
+                <a class="readmore" href="/step-five.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
