@@ -7,23 +7,23 @@
         <title>Step 1 - Set Up Pelican Blog/Website</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/main.css" />
 
         <meta name="description" content="Step one is going to be a lot of installing and setting up. Laying the foundation for your site. The Python syntax is super easy to read and..." />
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="/">python, pandas and ponderings</a></h1>
+                <h1><a href="http://localhost:8000/">pia says ...</a></h1>
 
                 <div class="topnav" id="myTopnav">
                 <a class = "menu-link" href="javascript:void(0);" class="icon" onclick="respond()">
                 <i class="fa fa-bars"></i>
                 </a>
-                    <a class = "menu-link"  href="/pages/about.html">About</a>
-                    <a class = "menu-link"  href="/pages/python-development.html">Python Dev</a>
-                    <a class = "menu-link"  href="/pages/web-development.html">Web Dev</a>
-                    <a class = "menu-link"  class="active" href="/category/blog.html">Blog</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/about.html">About</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/python-development.html">Python Dev</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/web-development.html">Web Dev</a>
+                    <a class = "menu-link"  class="active" href="http://localhost:8000/category/blog.html">Blog</a>
 
                 </div>
 
@@ -33,17 +33,17 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="/step-one.html" rel="bookmark"
-           title="Permalink to Step 1 - Set Up Pelican Blog/Website">Step 1 - Set Up Pelican Blog/Website</a></h1>
+        <a href="http://localhost:8000/step-one.html" rel="bookmark"
+          title="Permalink to Step 1 - Set Up Pelican Blog/Website">Step 1 - Set Up Pelican Blog/Website</a></h1>
     </header>
 
     <div class="entry-content">
 <footer class="post-info">
-        <p class="published" title="2023-10-04T00:00:00-07:00">
-                Published: Wed 04 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="/tag/python.html">python</a>, </p>        </p>
+        <p class="published" title="2024-04-19T00:00:00-07:00">
+                Published: Fri 19 April 2024  |  Tags: <a href="http://localhost:8000/tag/programming.html">programming</a>, <a href="http://localhost:8000/tag/pelican.html">pelican</a>, <a href="http://localhost:8000/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="http://localhost:8000/tag/python.html">python</a>, </p>        </p>
 
 </footer><!-- /.post-info -->      <blockquote>
-<p>Step one is going to be a lot of installing and setting up. Laying the foundation 
+<p>Step one is going to be a lot of installing and setting up. Laying the foundation
 for your site.</p>
 </blockquote>
 <p>The Python syntax is super easy to read and follow.
@@ -51,21 +51,21 @@ Pelican is also very simple and ideal for you as an introduction
 to programming. This tutorial will help you set up a blog, a website
 or both depending on what need is. And host it on GitHub for the world to see.</p>
 <h3>Installing Python</h3>
-<p>To install Python, click <a href="https://www.python.org/downloads/">here</a>, the 
+<p>To install Python, click <a href="https://www.python.org/downloads/">here</a>, the
 website should have recognized your operating system.
 <img alt="python page" src="/images/blog-img/python-website.png" title="python website"></p>
 <h3>Working with commandline in terminal</h3>
-<p>You will be using the command line a lot from now on, now that you have 
+<p>You will be using the command line a lot from now on, now that you have
 decided to learn to code.</p>
 <ol>
 <li>
-<p>Open the terminal on your computer </p>
+<p>Open the terminal on your computer</p>
 </li>
 <li>
 <p>Type <code>ls</code>. This will show the files and folders at your start position. You can also see your current folder at the bottom of the command window.</p>
 </li>
 <li>
-<p>To change position into a directory, type <code>cd &lt;directory name&gt;</code>, and to back out you <br> type <code>cd ..</code>. And again type <code>ls</code> to see what folders and files are in the current folder. Move around a bit in your computer's folder structure to get a feel for typing in command line. </p>
+<p>To change position into a directory, type <code>cd &lt;directory name&gt;</code>, and to back out you <br> type <code>cd ..</code>. And again type <code>ls</code> to see what folders and files are in the current folder. Move around a bit in your computer's folder structure to get a feel for typing in command line.</p>
 </li>
 <li>
 <p>Once you are in the place where you want to make the folder where you want to put your the folder for your website, type <code>mkdir</code> and then the name of your folder, for example <code>mkdir website</code>.</p>
@@ -75,8 +75,8 @@ decided to learn to code.</p>
 </li>
 </ol>
 <h3>Install Pelican and Set Up Your Blog / Website</h3>
-<p>Coding in Python you will regularly be using a command called pip. pip is Python's 
-package installer. You will be using pip to install various packages from 
+<p>Coding in Python you will regularly be using a command called pip. pip is Python's
+package installer. You will be using pip to install various packages from
 the Python Package Index.</p>
 <ol>
 <li>
@@ -114,6 +114,30 @@ the Python Package Index.</p>
 
 <p>It should say, <code>Done. Your new project is available</code>. You should now have two folders <em>content</em> and <em>output</em> plus four files Makefile, pelicanconf.py, publishconf.py and task.py</p>
 <p>This is this file structure we will be working in the next steps.</p>
+<p><a href="http://localhost:8000/step-two.html">See step 2 &gt;&gt;</a></p>
+
+      <div id = "comments">
+        <h3 id="comments">COMMENTS</h3>
+      </div>
+
+      <div id="comment-post">
+        <form method="POST" action="https://api.staticman.net/v2/entry/snipcart/pelican-blog/master/comments">
+          
+          <input name="options[redirect]" type="hidden" value="http://localhost:8000/step-one">
+          <input name="fields[url]" type="hidden" value="step-one">
+          
+          <label class="full-width" for =  "fullname">Name: </label>
+          <input class="full-width"  id = "fullname" name="fields[name]" type="text" placeholder="Your name..">
+
+          <label class="full-width"  for = "email">E-mail: </label>
+          <input class="full-width"  id =  "email" name="fields[email]" type="email" placeholder="Your email..">
+
+          <label class="full-width"  for = "message">Message: </label>
+          <textarea class="full-width"  id = "message" name="fields[message]"></textarea>
+          <input class="full-width"  type="submit" value="Submit">
+        </form>
+      </div>
+
     </div><!-- /.entry-content -->
 
   </article>
@@ -122,16 +146,7 @@ the Python Package Index.</p>
                 <div class="blogroll">
                         <h2>helpful links</h2>
                         <ul>
-                            <li><a href="https://flask.palletsprojects.com/en/3.0.x/">flask</a></li>
-                            <li><a href="https://palletsprojects.com/p/jinja/">jinja2</a></li>
-                            <li><a href="https://matplotlib.org/stable/users/index">matplotlib</a></li>
-                            <li><a href="https://numpy.org/">numPy</a></li>
-                            <li><a href="https://pandas.pydata.org/">pandas</a></li>
-                            <li><a href="https://getpelican.com/">pelican</a></li>
-                            <li><a href="https://www.postgresql.org/">postgreSQL</a></li>
-                            <li><a href="https://www.python.org/">python.org</a></li>
-                            <li><a href="https://seaborn.pydata.org/">seaborn</a></li>
-                            <li><a href="https://docs.python.org/3/library/tkinter.html">tkinter</a></li>
+                            <li><a href="">flask</a></li>
                         </ul>
                 </div><!-- /.blogroll -->
 
@@ -145,7 +160,6 @@ the Python Package Index.</p>
                         <ul>
 
                             <li><a href="">https://github.com/peayah</a></li>
-                            <li><a href="">https://twitter.com/pia_smith</a></li>
                         </ul>
                 </div><!-- /.social -->
 

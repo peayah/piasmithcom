@@ -7,22 +7,22 @@
         <title>Sales Data EDA</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/main.css" />
 
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="/">python, pandas and ponderings</a></h1>
+                <h1><a href="http://localhost:8000/">pia says ...</a></h1>
 
                 <div class="topnav" id="myTopnav">
                 <a class = "menu-link" href="javascript:void(0);" class="icon" onclick="respond()">
                 <i class="fa fa-bars"></i>
                 </a>
-                    <a class = "menu-link"  href="/pages/about.html">About</a>
-                    <a class = "menu-link"  href="/pages/python-development.html">Python Dev</a>
-                    <a class = "menu-link"  href="/pages/web-development.html">Web Dev</a>
-                    <a class = "menu-link"  href="/category/blog.html">Blog</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/about.html">About</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/python-development.html">Python Dev</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/web-development.html">Web Dev</a>
+                    <a class = "menu-link"  href="http://localhost:8000/category/blog.html">Blog</a>
 
                 </div>
 
@@ -33,17 +33,17 @@
     <p>&lt;<a href="python-development.html"> go back</a></p>
 <h2>EDA: Sales Data</h2>
 <h3>Table of Content:</h3>
-<p><a href = "#data-wrangling">Data Wrangling</a>   | <br>
-<a href = "#exploratory-data-analysis">Exploratory Data Analysis</a>   | <br>
-<a href = "#conclusions-and-suggestions">Suggestions</a>          </p>
+<p><a href = "#data-wrangling">Data Wrangling</a> |<br>
+<a href = "#exploratory-data-analysis">Exploratory Data Analysis</a> |<br>
+<a href = "#conclusions-and-suggestions">Suggestions</a></p>
 <h3>Data Wrangling</h3>
-<p>The dataset was pretty clean to begin with. Each of the twelve data files, had 
-                        lines with no content as well as duplicate lines.</p>
-<p>The address column contained the customer's full address. I would like to be 
-                        able to count number of cites and states in the dataset, so I broke that column 
-                        into four different columns: address, city, state and zip.</p>
+<p>The dataset was pretty clean to begin with. Each of the twelve data files, had
+lines with no content as well as duplicate lines.</p>
+<p>The address column contained the customer's full address. I would like to be
+able to count number of cites and states in the dataset, so I broke that column
+into four different columns: address, city, state and zip.</p>
 <p>I also added a category column, so I can group, for example, all phones in one
-                        group.</p>
+group.</p>
 <h3>Exploratory Data Analysis</h3>
 <p><strong>Looking at the division of purchases into states:</strong></p>
 <pre>
@@ -58,12 +58,12 @@
     ME        449321.38
 </pre>
 
-<p>It is clear that the dataset is probably a sample of a bigger dataset, since 
-                        it is limited to only eight states. However, analyzing the data, we can see 
-                        that, California, New York, Texas and Massachusetts make up 80% of the total 
-                        sales.</p>
-<p>The fact that it is half of the states that make up the 80% is a sign of a 
-                        healthy customer distribution.</p>
+<p>It is clear that the dataset is probably a sample of a bigger dataset, since
+it is limited to only eight states. However, analyzing the data, we can see
+that, California, New York, Texas and Massachusetts make up 80% of the total
+sales.</p>
+<p>The fact that it is half of the states that make up the 80% is a sign of a
+healthy customer distribution.</p>
 <p><strong>Looking at sales divided in to months and states:</strong></p>
 <pre>
  Month     California       Georgia   Massachusetts        Maine      New York        Oregon         Texas    Washington
@@ -81,10 +81,10 @@
     12     1788323.11     360494.32       509480.38     51966.07     646508.85     251495.06     614021.96     386005.95
 </pre>
 
-<p>We can see that, sales increase in March and April, when people get money back after filing 
-                            their taxes, and again end of the year when people buy presents for the holidays. Many 
-                            times stores will lower the price for the holidays but the prices for all items in this 
-                            dataset are the same for all states, all year.</p>
+<p>We can see that, sales increase in March and April, when people get money back after filing
+their taxes, and again end of the year when people buy presents for the holidays. Many
+times stores will lower the price for the holidays but the prices for all items in this
+dataset are the same for all states, all year.</p>
 <p><strong>Looking at the division of sales into categories:</strong></p>
 <pre>
     Categories    Total Sales               Categories    Items Sold                 
@@ -98,13 +98,13 @@
     Batteries       140572.60               Appliances     131 
 </pre>
 
-<p>We can see that, Laptops, Headphones and Phones make up 80% of the total 
-                        sales. With the laptop category making the same amount of money as the 
-                    headphones and phones combined.</p>
-<p>Although, monitors also makes a lot of money, they do so by being sold in 
-                        large volumes. Financially, monitor sales are 70% of the phone sales and 
-                        half the laptop sales. In other words, we have to sell about two monitors 
-                        for every phone or about three monitors for every phone.</p>
+<p>We can see that, Laptops, Headphones and Phones make up 80% of the total
+sales. With the laptop category making the same amount of money as the
+headphones and phones combined.</p>
+<p>Although, monitors also makes a lot of money, they do so by being sold in
+large volumes. Financially, monitor sales are 70% of the phone sales and
+half the laptop sales. In other words, we have to sell about two monitors
+for every phone or about three monitors for every phone.</p>
 <p><strong>Looking at the individual products within the categories:</strong></p>
 <pre>
     Category    Part                          Total Sales
@@ -143,7 +143,7 @@
 </pre>
 
 <p>We can see that, Apple's products contribute a lot to the bottomline. However, when looking at
-                    the parts individually, we can see that a couple of monitors also sell really well.</p>
+the parts individually, we can see that a couple of monitors also sell really well.</p>
 <p><strong>Looking at items that shipped together:</strong></p>
 <pre>
     No. of occurrences
@@ -162,59 +162,50 @@
      43  -  'iPhone', 'Lightning Charging Cable', 'Apple Airpods Headphones'
 </pre>
 
-<p>We can see that, most items shipped by themselves, however just under 10% 
-                        of the phones shipped with either an extra charging cable, a
-                        pair of headphones or both.</p>
+<p>We can see that, most items shipped by themselves, however just under 10%
+of the phones shipped with either an extra charging cable, a
+pair of headphones or both.</p>
 <p><strong>Suggestions</strong></p>
-<p>This appears to be a sample of a larger 
-                        dataset, with a limited number of categories 
-                        and parts. As well on the receiving end, a limited
-                        number of states and Zip codes. </p>
-<p>The dataset shows only sales and not profit, which 
-                        could change the conclusions if the markup of the 
-                        different products varies.</p>
+<p>This appears to be a sample of a larger
+dataset, with a limited number of categories
+and parts. As well on the receiving end, a limited
+number of states and Zip codes.</p>
+<p>The dataset shows only sales and not profit, which
+could change the conclusions if the markup of the
+different products varies.</p>
 <p>Noting the dataset is from 2019, and not skewed by
-                        Covid-19 home office set up sales.</p>
+Covid-19 home office set up sales.</p>
 <p>Assuming this is a representative sample of whole dataset with all electronics parts and all customers, I suggest the following:</p>
-<p><b>Suggest Complimentary Items: </b>When selling phones, show the 
-                        customer phones accessories like charging cables and headphones. 
-                        When showing laptops, additions like headphones and monitors should 
-                        be suggested as add-ons. If the complimentary products were not
-                        purchased at the time, there should be a follow up to suggest purchase.    </p>
-<p><b>Batteries: </b>At check-out, customers should 
-                        be offered to add a pack of batteries. Many times, people like
-                        to have spare batteries but it is not something people will actually
-                        go shopping for on its own.</p>
-<p><b>Go the Extra Mile For the First Time Purchase Customer: </b>Multiple customers 
-                        are repeat customers. In making the first
-                        purchase easy and uneventful, the customer is likely to return for additional
-                        purchases that may or may not be related to the first purchases. Getting the first 
-                        purchase from a customer is the purchase we spend the most marketing dollar
-                        to get, after that, the customer will sell themselves the idea to buy since they 
-                        are familiar with the purchasing experience, and have enjoyed it in the past.</p>
-<p><b>Apple's Products: </b>While Apple's products outsell the counterparts and 
-                        the customers seem to not mind the higher price, it is important to keep inventory
-                        that can ship right away.</p>
+<p><b>Suggest Complimentary Items: </b>When selling phones, show the
+customer phones accessories like charging cables and headphones.
+When showing laptops, additions like headphones and monitors should
+be suggested as add-ons. If the complimentary products were not
+purchased at the time, there should be a follow up to suggest purchase.</p>
+<p><b>Batteries: </b>At check-out, customers should
+be offered to add a pack of batteries. Many times, people like
+to have spare batteries but it is not something people will actually
+go shopping for on its own.</p>
+<p><b>Go the Extra Mile For the First Time Purchase Customer: </b>Multiple customers
+are repeat customers. In making the first
+purchase easy and uneventful, the customer is likely to return for additional
+purchases that may or may not be related to the first purchases. Getting the first
+purchase from a customer is the purchase we spend the most marketing dollar
+to get, after that, the customer will sell themselves the idea to buy since they
+are familiar with the purchasing experience, and have enjoyed it in the past.</p>
+<p><b>Apple's Products: </b>While Apple's products outsell the counterparts and
+the customers seem to not mind the higher price, it is important to keep inventory
+that can ship right away.</p>
 <p><strong>Further Investigation</strong></p>
 <p>Find local consumer data: average income, number of citizens and so on.
-                            Compare spending between the different states and zipcodes to see if 
-                            some markets have more potential than others.</p>
+Compare spending between the different states and zipcodes to see if
+some markets have more potential than others.</p>
 <p>Find competitor pricing for the listed parts and see if we are competitive.</p>
 </section>
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>helpful links</h2>
                         <ul>
-                            <li><a href="https://flask.palletsprojects.com/en/3.0.x/">flask</a></li>
-                            <li><a href="https://palletsprojects.com/p/jinja/">jinja2</a></li>
-                            <li><a href="https://matplotlib.org/stable/users/index">matplotlib</a></li>
-                            <li><a href="https://numpy.org/">numPy</a></li>
-                            <li><a href="https://pandas.pydata.org/">pandas</a></li>
-                            <li><a href="https://getpelican.com/">pelican</a></li>
-                            <li><a href="https://www.postgresql.org/">postgreSQL</a></li>
-                            <li><a href="https://www.python.org/">python.org</a></li>
-                            <li><a href="https://seaborn.pydata.org/">seaborn</a></li>
-                            <li><a href="https://docs.python.org/3/library/tkinter.html">tkinter</a></li>
+                            <li><a href="">flask</a></li>
                         </ul>
                 </div><!-- /.blogroll -->
 
@@ -228,7 +219,6 @@
                         <ul>
 
                             <li><a href="">https://github.com/peayah</a></li>
-                            <li><a href="">https://twitter.com/pia_smith</a></li>
                         </ul>
                 </div><!-- /.social -->
 

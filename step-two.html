@@ -7,23 +7,23 @@
         <title>Step 2 - Understand the Pelican Files and Folders</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/main.css" />
 
         <meta name="description" content="Step two, we're going to look at the files that was set up when we ran pelican-quickstart The Python syntax is super easy to read and follow...." />
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="/">python, pandas and ponderings</a></h1>
+                <h1><a href="http://localhost:8000/">pia says ...</a></h1>
 
                 <div class="topnav" id="myTopnav">
                 <a class = "menu-link" href="javascript:void(0);" class="icon" onclick="respond()">
                 <i class="fa fa-bars"></i>
                 </a>
-                    <a class = "menu-link"  href="/pages/about.html">About</a>
-                    <a class = "menu-link"  href="/pages/python-development.html">Python Dev</a>
-                    <a class = "menu-link"  href="/pages/web-development.html">Web Dev</a>
-                    <a class = "menu-link"  class="active" href="/category/blog.html">Blog</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/about.html">About</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/python-development.html">Python Dev</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/web-development.html">Web Dev</a>
+                    <a class = "menu-link"  class="active" href="http://localhost:8000/category/blog.html">Blog</a>
 
                 </div>
 
@@ -33,14 +33,14 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="/step-two.html" rel="bookmark"
-           title="Permalink to Step 2 - Understand the Pelican Files and Folders">Step 2 - Understand the Pelican Files and Folders</a></h1>
+        <a href="http://localhost:8000/step-two.html" rel="bookmark"
+          title="Permalink to Step 2 - Understand the Pelican Files and Folders">Step 2 - Understand the Pelican Files and Folders</a></h1>
     </header>
 
     <div class="entry-content">
 <footer class="post-info">
-        <p class="published" title="2023-10-06T00:00:00-07:00">
-                Published: Fri 06 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="/tag/python.html">python</a>, </p>        </p>
+        <p class="published" title="2024-04-26T00:00:00-07:00">
+                Published: Fri 26 April 2024  |  Tags: <a href="http://localhost:8000/tag/programming.html">programming</a>, <a href="http://localhost:8000/tag/pelican.html">pelican</a>, <a href="http://localhost:8000/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="http://localhost:8000/tag/python.html">python</a>, </p>        </p>
 
 </footer><!-- /.post-info -->      <blockquote>
 <p>Step two, we're going to look at the files that was set up when we ran <code>pelican-quickstart</code></p>
@@ -50,7 +50,7 @@ Pelican is also very simple and ideal for you as an introduction
 to programming. This tutorial will help you set up a blog, a website
 or both depending on what need is. And host it on GitHub for the world to see.</p>
 <h3>Ways to look at the files</h3>
-<p>You just use, your notepad to look at the files and the programming, however there are various integrated development environments  (IDE) that make it a lot easier.</p>
+<p>You just use, your notepad to look at the files and the programming, however there are various integrated development environments (IDE) that make it a lot easier.</p>
 <p>integrated development environments color codes the files, which help you navigate the files.</p>
 <ul>
 <li>When you installed <a href="https://www.python.org/downloads/">Python</a>, you also installed Idle. Idle is Python's integrated development environment.</li>
@@ -59,7 +59,7 @@ or both depending on what need is. And host it on GitHub for the world to see.</
 <h3>The content folder</h3>
 <p>Once you start creating pages, the <strong>content folder</strong> will contain for example your blog posts.</p>
 <h3>The output folder</h3>
-<p>The output folder will contain the files that you will be uploading </p>
+<p>The output folder will contain the files that you will be uploading</p>
 <h3>The Makefile</h3>
 <p>The Makefile is the instructions within Pelican to make the HTML files and how to serve the pages up to your browers, so you can see them.</p>
 <h3>The pelicanconf.py file</h3>
@@ -87,7 +87,7 @@ AUTHOR_FEED_RSS = None
 </code></pre></div>
 
 <h4>Blogroll and social links</h4>
-<p>Once, your website/blog is up we will get back to these, but for now leave them. But give some thought to other websites or blogs you want to link to. </p>
+<p>Once, your website/blog is up we will get back to these, but for now leave them. But give some thought to other websites or blogs you want to link to.</p>
 <p>The same goes for social links, it could be your own or somebodyelses.</p>
 <div class="highlight"><pre><span></span><code># Blogroll
 LINKS = ((&#39;Pelican&#39;, &#39;https://getpelican.com/&#39;),
@@ -132,6 +132,31 @@ SOCIAL = ((&#39;You can add links in your config file&#39;, &#39;#&#39;),
 <span class="c1">#DISQUS_SITENAME = &quot;&quot;</span>
 <span class="c1">#GOOGLE_ANALYTICS = &quot;&quot;</span>
 </code></pre></div>
+
+<p><a href="http://localhost:8000/step-one.html">&lt;&lt; See step 1 </a> | <a href="http://localhost:8000/step-three.html">See step 3 &gt;&gt;</a></p>
+
+      <div id = "comments">
+        <h3 id="comments">COMMENTS</h3>
+      </div>
+
+      <div id="comment-post">
+        <form method="POST" action="https://api.staticman.net/v2/entry/snipcart/pelican-blog/master/comments">
+          
+          <input name="options[redirect]" type="hidden" value="http://localhost:8000/step-two">
+          <input name="fields[url]" type="hidden" value="step-two">
+          
+          <label class="full-width" for =  "fullname">Name: </label>
+          <input class="full-width"  id = "fullname" name="fields[name]" type="text" placeholder="Your name..">
+
+          <label class="full-width"  for = "email">E-mail: </label>
+          <input class="full-width"  id =  "email" name="fields[email]" type="email" placeholder="Your email..">
+
+          <label class="full-width"  for = "message">Message: </label>
+          <textarea class="full-width"  id = "message" name="fields[message]"></textarea>
+          <input class="full-width"  type="submit" value="Submit">
+        </form>
+      </div>
+
     </div><!-- /.entry-content -->
 
   </article>
@@ -140,16 +165,7 @@ SOCIAL = ((&#39;You can add links in your config file&#39;, &#39;#&#39;),
                 <div class="blogroll">
                         <h2>helpful links</h2>
                         <ul>
-                            <li><a href="https://flask.palletsprojects.com/en/3.0.x/">flask</a></li>
-                            <li><a href="https://palletsprojects.com/p/jinja/">jinja2</a></li>
-                            <li><a href="https://matplotlib.org/stable/users/index">matplotlib</a></li>
-                            <li><a href="https://numpy.org/">numPy</a></li>
-                            <li><a href="https://pandas.pydata.org/">pandas</a></li>
-                            <li><a href="https://getpelican.com/">pelican</a></li>
-                            <li><a href="https://www.postgresql.org/">postgreSQL</a></li>
-                            <li><a href="https://www.python.org/">python.org</a></li>
-                            <li><a href="https://seaborn.pydata.org/">seaborn</a></li>
-                            <li><a href="https://docs.python.org/3/library/tkinter.html">tkinter</a></li>
+                            <li><a href="">flask</a></li>
                         </ul>
                 </div><!-- /.blogroll -->
 
@@ -163,7 +179,6 @@ SOCIAL = ((&#39;You can add links in your config file&#39;, &#39;#&#39;),
                         <ul>
 
                             <li><a href="">https://github.com/peayah</a></li>
-                            <li><a href="">https://twitter.com/pia_smith</a></li>
                         </ul>
                 </div><!-- /.social -->
 

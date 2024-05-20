@@ -7,23 +7,23 @@
         <title>Step 4 - Fix Errors</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/main.css" />
 
         <meta name="description" content="When things go wrong, error messages are your best friends. The Python syntax is super easy to read and follow. Pelican is also very simple and..." />
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="/">python, pandas and ponderings</a></h1>
+                <h1><a href="http://localhost:8000/">pia says ...</a></h1>
 
                 <div class="topnav" id="myTopnav">
                 <a class = "menu-link" href="javascript:void(0);" class="icon" onclick="respond()">
                 <i class="fa fa-bars"></i>
                 </a>
-                    <a class = "menu-link"  href="/pages/about.html">About</a>
-                    <a class = "menu-link"  href="/pages/python-development.html">Python Dev</a>
-                    <a class = "menu-link"  href="/pages/web-development.html">Web Dev</a>
-                    <a class = "menu-link"  class="active" href="/category/blog.html">Blog</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/about.html">About</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/python-development.html">Python Dev</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/web-development.html">Web Dev</a>
+                    <a class = "menu-link"  class="active" href="http://localhost:8000/category/blog.html">Blog</a>
 
                 </div>
 
@@ -33,14 +33,14 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="/step-four.html" rel="bookmark"
-           title="Permalink to Step 4 - Fix Errors">Step 4 - Fix Errors</a></h1>
+        <a href="http://localhost:8000/step-four.html" rel="bookmark"
+          title="Permalink to Step 4 - Fix Errors">Step 4 - Fix Errors</a></h1>
     </header>
 
     <div class="entry-content">
 <footer class="post-info">
-        <p class="published" title="2023-10-07T00:00:00-07:00">
-                Published: Sat 07 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, <a href="/tag/pelican.html">pelican</a>, <a href="/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="/tag/python.html">python</a>, </p>        </p>
+        <p class="published" title="2024-05-10T00:00:00-07:00">
+                Published: Fri 10 May 2024  |  Tags: <a href="http://localhost:8000/tag/programming.html">programming</a>, <a href="http://localhost:8000/tag/pelican.html">pelican</a>, <a href="http://localhost:8000/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="http://localhost:8000/tag/python.html">python</a>, </p>        </p>
 
 </footer><!-- /.post-info -->      <blockquote>
 <p>When things go wrong, error messages are your best friends.</p>
@@ -51,8 +51,8 @@ to programming. This tutorial will help you set up a blog, a website
 or both depending on what need is. And host it on GitHub for the world to see.</p>
 <p>In step three, you saw the following two error messages.</p>
 <ul>
-<li>WARNING  Watched path does not exist:  /Users/yourname/Desktop/website/content/images </li>
-<li>WARNING  Unable to find `/favicon.ico` or variations: </li>
+<li>WARNING Watched path does not exist: /Users/yourname/Desktop/website/content/images</li>
+<li>WARNING Unable to find `/favicon.ico` or variations:</li>
 </ul>
 <h3>Error 1: Add the images folder</h3>
 <ol>
@@ -64,10 +64,10 @@ or both depending on what need is. And host it on GitHub for the world to see.</
 <p>A favicon is that little icon that is on the tabs in your browser, like in the image.</p>
 <p><img alt="favicon image" src="/images/blog-img/favicon-example.png" title="favicon"></p>
 <h3>Make a favicon</h3>
-<p>Some applications can save an image as a .ico. If you don't have such an application that are webistes that will do the job for you. </p>
+<p>Some applications can save an image as a .ico. If you don't have such an application that are webistes that will do the job for you.</p>
 <p>The page I used is https://www.icoconverter.com/. As you can see from the image it is limited what you can see, so keep it simple.</p>
 <p>Make sure the favicon is saved as favicon.ico.</p>
-<p>If you are following along, you can download the favicon <a href="/favicon.ico">here</a>.</p>
+<p>If you are following along, you can download the favicon <a href="http://localhost:8000/favicon.ico">here</a>.</p>
 <h3>Add new folder</h3>
 <p>In terminal, navigate to the content folder and <code>mkdir extra</code></p>
 <h3>Add Lines to pelicanconf.py</h3>
@@ -88,8 +88,32 @@ EXTRA_PATH_METADATA = {
 <ol>
 <li><code>make html</code> and <code>make serve</code></li>
 <li>Your page may look something like this.
-<img alt="Website with favicon" src="/images/blog-img/website-with-favicon.jpg" title="website with favicon"></li>
+   <img alt="Website with favicon" src="/images/blog-img/website-with-favicon.jpg" title="website with favicon"></li>
 </ol>
+<p><a href="http://localhost:8000/step-three.html">&lt;&lt; See step 3 </a> | <a href="http://localhost:8000/step-five.html">See step 5 &gt;&gt;</a></p>
+
+      <div id = "comments">
+        <h3 id="comments">COMMENTS</h3>
+      </div>
+
+      <div id="comment-post">
+        <form method="POST" action="https://api.staticman.net/v2/entry/snipcart/pelican-blog/master/comments">
+          
+          <input name="options[redirect]" type="hidden" value="http://localhost:8000/step-four">
+          <input name="fields[url]" type="hidden" value="step-four">
+          
+          <label class="full-width" for =  "fullname">Name: </label>
+          <input class="full-width"  id = "fullname" name="fields[name]" type="text" placeholder="Your name..">
+
+          <label class="full-width"  for = "email">E-mail: </label>
+          <input class="full-width"  id =  "email" name="fields[email]" type="email" placeholder="Your email..">
+
+          <label class="full-width"  for = "message">Message: </label>
+          <textarea class="full-width"  id = "message" name="fields[message]"></textarea>
+          <input class="full-width"  type="submit" value="Submit">
+        </form>
+      </div>
+
     </div><!-- /.entry-content -->
 
   </article>
@@ -98,16 +122,7 @@ EXTRA_PATH_METADATA = {
                 <div class="blogroll">
                         <h2>helpful links</h2>
                         <ul>
-                            <li><a href="https://flask.palletsprojects.com/en/3.0.x/">flask</a></li>
-                            <li><a href="https://palletsprojects.com/p/jinja/">jinja2</a></li>
-                            <li><a href="https://matplotlib.org/stable/users/index">matplotlib</a></li>
-                            <li><a href="https://numpy.org/">numPy</a></li>
-                            <li><a href="https://pandas.pydata.org/">pandas</a></li>
-                            <li><a href="https://getpelican.com/">pelican</a></li>
-                            <li><a href="https://www.postgresql.org/">postgreSQL</a></li>
-                            <li><a href="https://www.python.org/">python.org</a></li>
-                            <li><a href="https://seaborn.pydata.org/">seaborn</a></li>
-                            <li><a href="https://docs.python.org/3/library/tkinter.html">tkinter</a></li>
+                            <li><a href="">flask</a></li>
                         </ul>
                 </div><!-- /.blogroll -->
 
@@ -121,7 +136,6 @@ EXTRA_PATH_METADATA = {
                         <ul>
 
                             <li><a href="">https://github.com/peayah</a></li>
-                            <li><a href="">https://twitter.com/pia_smith</a></li>
                         </ul>
                 </div><!-- /.social -->
 

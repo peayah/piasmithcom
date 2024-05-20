@@ -7,23 +7,23 @@
         <title>Hello World</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/main.css" />
 
         <meta name="description" content="Hello world" />
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="/">python, pandas and ponderings</a></h1>
+                <h1><a href="http://localhost:8000/">pia says ...</a></h1>
 
                 <div class="topnav" id="myTopnav">
                 <a class = "menu-link" href="javascript:void(0);" class="icon" onclick="respond()">
                 <i class="fa fa-bars"></i>
                 </a>
-                    <a class = "menu-link"  href="/pages/about.html">About</a>
-                    <a class = "menu-link"  href="/pages/python-development.html">Python Dev</a>
-                    <a class = "menu-link"  href="/pages/web-development.html">Web Dev</a>
-                    <a class = "menu-link"  class="active" href="/category/blog.html">Blog</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/about.html">About</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/python-development.html">Python Dev</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/web-development.html">Web Dev</a>
+                    <a class = "menu-link"  class="active" href="http://localhost:8000/category/blog.html">Blog</a>
 
                 </div>
 
@@ -33,16 +33,39 @@
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="/hello-world.html" rel="bookmark"
-           title="Permalink to Hello World">Hello World</a></h1>
+        <a href="http://localhost:8000/hello-world.html" rel="bookmark"
+          title="Permalink to Hello World">Hello World</a></h1>
     </header>
 
     <div class="entry-content">
 <footer class="post-info">
-        <p class="published" title="2023-10-01T00:00:00-07:00">
-                Published: Sun 01 October 2023  |  Tags: <a href="/tag/programming.html">programming</a>, </p>        </p>
+        <p class="published" title="2024-04-05T00:00:00-07:00">
+                Published: Fri 05 April 2024  |  Tags: <a href="http://localhost:8000/tag/programming.html">programming</a>, </p>        </p>
 
 </footer><!-- /.post-info -->      <p>Hello world</p>
+
+      <div id = "comments">
+        <h3 id="comments">COMMENTS</h3>
+      </div>
+
+      <div id="comment-post">
+        <form method="POST" action="https://api.staticman.net/v2/entry/snipcart/pelican-blog/master/comments">
+          
+          <input name="options[redirect]" type="hidden" value="http://localhost:8000/hello-world">
+          <input name="fields[url]" type="hidden" value="hello-world">
+          
+          <label class="full-width" for =  "fullname">Name: </label>
+          <input class="full-width"  id = "fullname" name="fields[name]" type="text" placeholder="Your name..">
+
+          <label class="full-width"  for = "email">E-mail: </label>
+          <input class="full-width"  id =  "email" name="fields[email]" type="email" placeholder="Your email..">
+
+          <label class="full-width"  for = "message">Message: </label>
+          <textarea class="full-width"  id = "message" name="fields[message]"></textarea>
+          <input class="full-width"  type="submit" value="Submit">
+        </form>
+      </div>
+
     </div><!-- /.entry-content -->
 
   </article>
@@ -51,16 +74,7 @@
                 <div class="blogroll">
                         <h2>helpful links</h2>
                         <ul>
-                            <li><a href="https://flask.palletsprojects.com/en/3.0.x/">flask</a></li>
-                            <li><a href="https://palletsprojects.com/p/jinja/">jinja2</a></li>
-                            <li><a href="https://matplotlib.org/stable/users/index">matplotlib</a></li>
-                            <li><a href="https://numpy.org/">numPy</a></li>
-                            <li><a href="https://pandas.pydata.org/">pandas</a></li>
-                            <li><a href="https://getpelican.com/">pelican</a></li>
-                            <li><a href="https://www.postgresql.org/">postgreSQL</a></li>
-                            <li><a href="https://www.python.org/">python.org</a></li>
-                            <li><a href="https://seaborn.pydata.org/">seaborn</a></li>
-                            <li><a href="https://docs.python.org/3/library/tkinter.html">tkinter</a></li>
+                            <li><a href="">flask</a></li>
                         </ul>
                 </div><!-- /.blogroll -->
 
@@ -74,7 +88,6 @@
                         <ul>
 
                             <li><a href="">https://github.com/peayah</a></li>
-                            <li><a href="">https://twitter.com/pia_smith</a></li>
                         </ul>
                 </div><!-- /.social -->
 
