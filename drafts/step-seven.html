@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Step 7 - Git Version Control</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/main.css" />
+
+        <meta name="description" content="The two main reasons people use the internet are to be entertained and seek information. You will upload your website for everybody to see and..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://localhost:8000/">pia says ...</a></h1>
+
+                <div class="topnav" id="myTopnav">
+                <a class = "menu-link" href="javascript:void(0);" class="icon" onclick="respond()">
+                <i class="fa fa-bars"></i>
+                </a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/about.html">About</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/python-development.html">Python Dev</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/web-development.html">Web Dev</a>
+                    <a class = "menu-link"  class="active" href="http://localhost:8000/category/blog.html">Blog</a>
+
+                </div>
+
+
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="http://localhost:8000/drafts/step-seven.html" rel="bookmark"
+          title="Permalink to Step 7 - Git Version Control">Step 7 - Git Version Control</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <p class="published" title="2024-05-31T00:00:00-07:00">
+                Published: Fri 31 May 2024  |  Tags: <a href="http://localhost:8000/tag/programming.html">programming</a>, <a href="http://localhost:8000/tag/pelican.html">pelican</a>, <a href="http://localhost:8000/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="http://localhost:8000/tag/python.html">python</a>, </p>        </p>
+
+</footer><!-- /.post-info -->      <blockquote>
+<p>The two main reasons people use the internet are to be entertained and seek information. You will upload your website for everybody to see and read.</p>
+</blockquote>
+<p>The Python syntax is super easy to read and follow.
+Pelican is also very simple and ideal for you as an introduction
+to programming. This tutorial will help you set up a blog, a website
+or both depending on what need is. And host it on GitHub for the world to see.</p>
+<h3>Create a GitHub Account</h3>
+<ol>
+<li>Open your browser and paste https://github.com</li>
+<li>Click the sign up button</li>
+<li>Follow the instructions. When you choose your account know it will be part of the url for your site, like this https://github.com/YOUR-ACCOUNT-NAME/repository-name. If you have a domaian name you can connect that to the GitHub site, and then the account name will not be visible.</li>
+<li>When asked to "Unlock advanced features with GitHub Team or continue with a free plan for the basics.", click continue for free.</li>
+<li>Click on the icon in the top right corner.</li>
+<li>Towards the bottom click on Settings.</li>
+<li>On the left, click on Password and authentication.</li>
+<li>Set up Passkey and Two-factor authentication.</li>
+</ol>
+<h3>Create a GitHub Repository</h3>
+<ol>
+<li>On the left, click the <em>Create repository</em> button.</li>
+<li>Add the repository name, for example <em>yogurt-journey</em>.</li>
+<li>Click the <em>Create repository</em> button at the bottom.</li>
+</ol>
+<h3>Uploading Output Folder to GitHub</h3>
+<ol>
+<li>Open command line. cd and cd .. into the output folder.</li>
+<li>Type git init and hit return. Wait for it to run the set up.</li>
+<li>Follow the instructions from GitHub for commandline.</li>
+<li>Type git init and hit return.</li>
+<li>Type git commit -m "first commit" and hit return.</li>
+<li>Type git branch -M main and hit return.</li>
+</ol>
+<p><a href="http://localhost:8000/step-six.html">&lt;&lt; See step 6 </a></p>
+
+      <div id = "comments">
+        <h3 id="comments">COMMENTS</h3>
+      </div>
+
+      <div id="comment-post">
+        <form method="POST" action="https://api.staticman.net/v2/entry/snipcart/pelican-blog/master/comments">
+          
+          <input name="options[redirect]" type="hidden" value="http://localhost:8000/step-seven">
+          <input name="fields[url]" type="hidden" value="step-seven">
+          
+          <label class="full-width" for =  "fullname">Name: </label>
+          <input class="full-width"  id = "fullname" name="fields[name]" type="text" placeholder="Your name..">
+
+          <label class="full-width"  for = "email">E-mail: </label>
+          <input class="full-width"  id =  "email" name="fields[email]" type="email" placeholder="Your email..">
+
+          <label class="full-width"  for = "message">Message: </label>
+          <textarea class="full-width"  id = "message" name="fields[message]"></textarea>
+          <input class="full-width"  type="submit" value="Submit">
+        </form>
+      </div>
+
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>helpful links</h2>
+                        <ul>
+                            <li><a href="">flask</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+
+                <div class="social">
+                        <h2>let's connect</h2>
+                        <ul>
+
+                            <li><a href="">https://github.com/peayah</a></li>
+                        </ul>
+                </div><!-- /.social -->
+
+                </address><!-- /#about -->
+
+
+        </footer><!-- /#contentinfo -->
+
+<script>
+function respond() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script></body>
+</html>

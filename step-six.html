@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Step 6 - Adding Details for the Reader</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://localhost:8000/theme/css/main.css" />
+
+        <meta name="description" content="The two main reasons people use the internet are to be entertained and seek infomation. The Python syntax is super easy to read and follow...." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://localhost:8000/">pia says ...</a></h1>
+
+                <div class="topnav" id="myTopnav">
+                <a class = "menu-link" href="javascript:void(0);" class="icon" onclick="respond()">
+                <i class="fa fa-bars"></i>
+                </a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/about.html">About</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/python-development.html">Python Dev</a>
+                    <a class = "menu-link"  href="http://localhost:8000/pages/web-development.html">Web Dev</a>
+                    <a class = "menu-link"  class="active" href="http://localhost:8000/category/blog.html">Blog</a>
+
+                </div>
+
+
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="http://localhost:8000/step-six.html" rel="bookmark"
+          title="Permalink to Step 6 - Adding Details for the Reader">Step 6 - Adding Details for the Reader</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <p class="published" title="2024-05-24T00:00:00-07:00">
+                Published: Fri 24 May 2024  |  Tags: <a href="http://localhost:8000/tag/programming.html">programming</a>, <a href="http://localhost:8000/tag/pelican.html">pelican</a>, <a href="http://localhost:8000/tag/pelican-tutorial.html">pelican tutorial</a>, <a href="http://localhost:8000/tag/python.html">python</a>, </p>        </p>
+
+</footer><!-- /.post-info -->      <blockquote>
+<p>The two main reasons people use the internet are to be entertained and seek infomation.</p>
+</blockquote>
+<p>The Python syntax is super easy to read and follow.
+Pelican is also very simple and ideal for you as an introduction
+to programming. This tutorial will help you set up a blog, a website
+or both depending on what need is. And host it on GitHub for the world to see.</p>
+<p>In step six, you will fill in a few details before you in the next step will upload and host it on GitHub</p>
+<h3>Adding Blog or website links</h3>
+<ol>
+<li>Open pelicanconf.py</li>
+<li>Add blog links</li>
+<li>The first part, between the first two apostrophes is the text you see, the second part is the url for the page.</li>
+</ol>
+<div class="highlight"><pre><span></span><code>LINKS = ((&#39;Chobani Greek Plain Yogurt&#39;, &#39;https://www.chobani.com/&#39;),
+        (&#39;Fage Greek Plain Yogurt&#39;, &#39;https://usa.fage/&#39;),
+        (&#39;Wallaby Organic Aussie Greek Whole Milk Plain Yogurt&#39;, &#39;https://wallabyyogurt.com/&#39;),)
+</code></pre></div>
+
+<h3>Adding Social Links</h3>
+<ol>
+<li>Also in pelicanconf.py</li>
+<li>Add social links</li>
+<li>The first part, between the first two apostrophes is the text you see, the second part is the link to what you are linking to.</li>
+</ol>
+<div class="highlight"><pre><span></span><code># Social widget
+SOCIAL = ((&#39;The True Yogurt Lover&#39;, &#39;#&#39;),
+        (&#39;Not Just Another Yo&#39;, &#39;#&#39;),)
+</code></pre></div>
+
+<h3>Adding a few more blog posts</h3>
+<ol>
+<li>In preparation for next step's upload, you can add a few more posts to the blog.</li>
+</ol>
+<h3>See the Website</h3>
+<ol>
+<li>In terminal, <code>make html</code> and then <code>make serve</code></li>
+<li>The page in your browser, should look something like this.</li>
+</ol>
+<p><img alt="website with changes" src="/images/blog-img/thechanges.jpg" title="thechanges"></p>
+<p><a href="http://localhost:8000/step-five.html">&lt;&lt; See step 5 </a> | <a href="http://localhost:8000/drafts/step-seven.html">See step 7 &gt;&gt;</a></p>
+
+      <div id = "comments">
+        <h3 id="comments">COMMENTS</h3>
+      </div>
+
+      <div id="comment-post">
+        <form method="POST" action="https://api.staticman.net/v2/entry/snipcart/pelican-blog/master/comments">
+          
+          <input name="options[redirect]" type="hidden" value="http://localhost:8000/step-six">
+          <input name="fields[url]" type="hidden" value="step-six">
+          
+          <label class="full-width" for =  "fullname">Name: </label>
+          <input class="full-width"  id = "fullname" name="fields[name]" type="text" placeholder="Your name..">
+
+          <label class="full-width"  for = "email">E-mail: </label>
+          <input class="full-width"  id =  "email" name="fields[email]" type="email" placeholder="Your email..">
+
+          <label class="full-width"  for = "message">Message: </label>
+          <textarea class="full-width"  id = "message" name="fields[message]"></textarea>
+          <input class="full-width"  type="submit" value="Submit">
+        </form>
+      </div>
+
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>helpful links</h2>
+                        <ul>
+                            <li><a href="">flask</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+
+                <div class="social">
+                        <h2>let's connect</h2>
+                        <ul>
+
+                            <li><a href="">https://github.com/peayah</a></li>
+                        </ul>
+                </div><!-- /.social -->
+
+                </address><!-- /#about -->
+
+
+        </footer><!-- /#contentinfo -->
+
+<script>
+function respond() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script></body>
+</html>
