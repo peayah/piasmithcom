@@ -27,6 +27,9 @@ __Data__: SQL, JSON, XML, APIs, MySQL, Scikit-learn, Pandas.
 
 __Front End__: HTML, CSS, JavaScript.
 
+## Featured Project
+Here is a project that respresent some of my abilities and reflect my working style
+
 
 ## Testimonials
 
