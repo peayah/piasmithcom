@@ -49,3 +49,4 @@ I had the chance to work with Pia during the design and implementation of the Ge
 __Rachel Radway__
 
 Pia's a dedicated web designer who really listens to what her clients want and need, and asks the right questions to elicit answers when they aren't sure themselves. She presented a number of great options for my website redesign, and came up with something fun and creative. She's also been quick to respond when I've needed small tweaks made. I'd definitely recommend her!
+
