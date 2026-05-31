@@ -27,6 +27,33 @@ __Data__: SQL, JSON, XML, APIs, MySQL, Scikit-learn, Pandas.
 
 __Front End__: HTML, CSS, JavaScript.
 
+### Analyze Engineering Workflow Bottlenecks
+
+__Scenario:__ Using GitHub Archive and build a reporting system that surfaces: 
+- pull request wait times
+- issue aging
+- review bottlenecks
+- overloaded contributors
+- stalled work items
+- cycle time trends
+- 
+__Process:__
+Aiming to answer questions like
+
+- Where are handoffs slowing delivery?
+- Are approvals becoming bottlenecks?
+- Which stages accumulate the most delay?
+- Are there contributors or teams acting as workflow chokepoints?
+
+__Deliverables:__
+- Automated data ingestion pipeline
+- Metrics dashboard
+- Bottleneck scoring/reporting system
+- Written recommendations for workflow improvement
+
+__Dataset:__
+[GitHub Archive](https://www.gharchive.org/)
+
 
 ## Testimonials
 
