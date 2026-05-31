@@ -3,6 +3,8 @@ layout: default
 title: Home
 ---
 
+## In Six Bullet points
+
 - Building interactive dashboards that let users run what-if scenarios that a static report image may not be able to answer.
 
 - Building web-based and stand-alone apps
