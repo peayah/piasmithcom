@@ -36,9 +36,9 @@ __Scenario:__ Using GitHub Archive and build a reporting system that surfaces:
 - overloaded contributors
 - stalled work items
 - cycle time trends
-- 
+
 __Process:__
-Aiming to answer questions like
+Aiming to answer questions like:
 
 - Where are handoffs slowing delivery?
 - Are approvals becoming bottlenecks?
