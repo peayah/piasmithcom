@@ -33,13 +33,23 @@ Here is a project that respresent some of my abilities and reflect my working st
 ### Investigate Checkout Funnel Drop-Offs
 Shows user behavior analysis, business recommendations and dashboard building.
 
-__Scenario:__
+__Scenario:__ Using the Google Merchandise Store analytics dataset to investigate the customer funnel and identify the largest abandonment points. Find out where users are dropping out or whether the issue is device-specific, behavioral, or related to the onboarding flow.
 
 __Process:__
+- A cleaned and structured analysis pipeline
+- Funnel visualizations
+- Drop-off percentages between each major step
+- Segmentation by device type, traffic source, and returning vs new users
+- Identification of unusual behavior patterns or friction points
+- A short recommendation section prioritizing the top 3 likely causes of abandonment
 
 __Deliverables:__
+- Dashboard or reporting interface
+- Reproducible analysis scripts
+- Executive summary with recommendations
 
 __Dataset:__
+[Google BigQuery](https://cloud.google.com/bigquery?utm_source=google&utm_medium=cpc&utm_campaign=Cloud-SS-DR-GCP-1713658-GCP-DR-NA-US-en-Google-BKWS-BRO-BigQuery&utm_content=c-Hybrid+%7C+BKWS+-+BRO+%7C+Txt-Data+Analytics-Data+Analytics-BigQuery-43801843506&utm_term=google%20bigquery&gclsrc=aw.ds&gad_source=1&gad_campaignid=23759663701&gclid=EAIaIQobChMIv9y2u6bklAMV5ShECB0jTDEyEAAYASAAEgKI2vD_BwE)
 
 
 ## Testimonials
