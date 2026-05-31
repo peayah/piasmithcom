@@ -23,7 +23,7 @@ __Development__: Python, Django, Flask, seaborn, Matplotlib.
 
 __Data__: SQL, JSON, XML, APIs, MySQL, Scikit-learn, Pandas.
 
-__Front End__: HTML, CSS, BootStrap, JavaScript.
+__Front End__: HTML, CSS, JavaScript.
 
 
 ## Testimonials
