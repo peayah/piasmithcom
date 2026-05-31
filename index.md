@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-## In Six Bullet points
+## In Six Bullet Points
 
 - Building interactive dashboards that let users run what-if scenarios that a static report image may not be able to answer.
 
