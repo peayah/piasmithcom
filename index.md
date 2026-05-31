@@ -30,6 +30,17 @@ __Front End__: HTML, CSS, JavaScript.
 ## Featured Project
 Here is a project that respresent some of my abilities and reflect my working style
 
+### Investigate Checkout Funnel Drop-Offs
+Shows user behavior analysis, business recommendations and dashboard building.
+
+__Scenario:__
+
+__Process:__
+
+__Deliverables:__
+
+__Dataset:__
+
 
 ## Testimonials
 
