@@ -1,4 +1,4 @@
-## Hi, I'm Pia Smith, data enthusiast
+## Hi, I'm Pia Smith, Data Enthusiast
 
 I transform raw data into actionable business intelligence and build the pipelines that make it happen.
 
