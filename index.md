@@ -7,13 +7,13 @@ title: portfolio
 
 - Building interactive dashboards that let users run what-if scenarios that a static report image may not be able to answer.
 
-- Building web-based and stand-alone apps
+- Building web-based and stand-alone apps.
 
-- Developing programs and scripts
+- Developing programs and scripts.
 
 - Cleaning data, by identifying, removing or replacing outliers, duplicates and null values. Enriching data with calculated fields, splitting into smaller bites or encoding categories numerically.
 
-- Developing machine learning data models, training and testing them
+- Developing machine learning data models, training and testing them.
 
 - Visualizing data findings in easy to understand presentations or accessible dashboards.
 
