@@ -21,7 +21,7 @@ Let's talk! pia@piasmith.com
 
 
 ## Skills
-__Development__: Python, Django, Flask, seaborn, Matplotlib.
+__Development__: Python, Django, Flask, Seaborn, Matplotlib.
 
 __Data__: SQL, JSON, XML, APIs, MySQL, Scikit-learn, Pandas.
 
