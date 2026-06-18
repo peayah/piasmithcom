@@ -17,7 +17,8 @@ title: portfolio
 
 - Visualizing data findings in easy to understand presentations or accessible dashboards.
 
-pia@piasmith.com ... Let's talk! 
+Let's talk!<b/>
+pia@piasmith.com
 
 
 ## Skills
