@@ -41,7 +41,7 @@ Machine learning project using customer purchasing behavior to predict churn. Bu
 
 Key result: 76.95% accuracy and 86.39% recall, compared with 59.38% baseline accuracy.
 
-[View Project](pages/churn.md)
+[View Project on Github](https://github.com/peayah/customer_intelligence_system)
 
 ![composite image with graph on top of coffeeshop people shots](/images/coffeeshop.jpg)
 
@@ -51,7 +51,7 @@ Python automation project that transforms coffee shop sales data into quarterly 
 
 Key result: Automated the reporting workflow from raw sales data to completed quarterly reports, reducing manual analysis and report creation.
 
-[View Project] (pages/automator.md)
+[View Project on GitHub]([pages/automator.md](https://github.com/peayah/excel_workflow_automator))
 
 
 ## testimonials
