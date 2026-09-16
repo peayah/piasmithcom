@@ -3,7 +3,7 @@ layout: default
 title: portfolio
 ---
 
-## In Six Bullet Points
+## in six bullet points
 
 - Building interactive dashboards that let users run what-if scenarios that a static report image may not be able to answer.
 
@@ -21,15 +21,40 @@ Let's talk!<br/>
 pia@piasmith.com
 
 
-## Skills
-__Development__: Python, Django, Flask, Seaborn, Matplotlib.
+## skills
 
-__Data__: SQL, JSON, XML, APIs, MySQL, Scikit-learn, Pandas.
+_Development_: Python, Django, Flask, APIs
 
-__Front End__: HTML, CSS, JavaScript.
+_Data & Machine Learning_: SQL, MySQL, Pandas, Scikit-learn, JSON, XML
+
+_Visualization_: Matplotlib, Seaborn
+
+_Front End_: HTML, CSS, JavaScript
+
+## projects
+
+![composite image with churn results and anonymous person with H & M bag](/images/handm.jpg)
+
+### H&M Customer Churn Prediction
+
+Machine learning project using customer purchasing behavior to predict churn. Built customer-level features, defined a churn classification, trained a Logistic Regression model, and evaluated its performance against a baseline.
+
+Key result: 76.95% accuracy and 86.39% recall, compared with 59.38% baseline accuracy.
+
+[View Project](pages/churn.md)
+
+![composite image with graph on top of coffeeshop people shots](/images/coffeeshop.jpg)
+
+### Excel Workflow Automator
+
+Python automation project that transforms coffee shop sales data into quarterly Excel reports. Built reusable calculations for KPIs, sales performance, location and time analysis, and automated observations, then generated formatted Excel workbooks with charts.
+
+Key result: Automated the reporting workflow from raw sales data to completed quarterly reports, reducing manual analysis and report creation.
+
+[View Project] (pages/automator.md)
 
 
-## Testimonials
+## testimonials
 
 __Amanda Gerrie - Career Coach and Consultant <br />Pathways Career Consulting__
 
@@ -50,4 +75,3 @@ I had the chance to work with Pia during the design and implementation of the Ge
 __Rachel Radway__
 
 Pia's a dedicated web designer who really listens to what her clients want and need, and asks the right questions to elicit answers when they aren't sure themselves. She presented a number of great options for my website redesign, and came up with something fun and creative. She's also been quick to respond when I've needed small tweaks made. I'd definitely recommend her!
-
